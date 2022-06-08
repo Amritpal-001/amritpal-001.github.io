@@ -6,11 +6,11 @@
 -->
 <html>
 	<head>
-		<title>Guru's blog</title>
+		<title>Deep Learning on properly and randomly labelled data</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="assets/css/main.css" />    
+	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
 
@@ -18,7 +18,8 @@
 			<div id="wrapper">
 
 				<!-- Header -->
-					<header id="header" style='background-color:inherit' class="alt">
+				<!-- Note: The "styleN" class below should match that of the banner element. -->
+					<header id="header" style='background-color:inherit' class="alt style2;">
 						<a href="index.html" class="logo"><strong>guru3</strong></a>
 						<nav>
 							<a href="#menu">Menu</a>
@@ -36,38 +37,30 @@
 					</nav>
 
 				<!-- Banner -->
-					<section id="banner" class="major">
+				<!-- Note: The "styleN" class below should match that of the header element. -->
+					<section id="banner" class="style2">
 						<div class="inner">
-							<header class="major">
-								<h1><span style='background-color:#0099FF;opacity:0.5;color:black;padding:5px;border-radius:25px;'>Guru's Blog!</span></h1>
-								<p><span style='background-color:#0099FF;color:black;padding:10px;opacity:0.8;color:black;font-size:15px;border-radius:15px'>Describing different projects I have been working on!</span></p>
+							<span class="image">
+								<img src="images/project2/cnnlayer.jpg" alt="" />
+							</span>
+							<header class="major" style='background:linear-gradient(to left, red 0%, green 97%);border-radius:25px;opacity:0.8'>
+								<h1>Visualizing CNN layers</h1>
 							</header>
 						</div>
 					</section>
 
 				<!-- Main -->
-					<div id="main">
-						<!-- One -->
-							<section id="one" class="tiles" style="background-color:black">
-								<article>
-									<span class="image">
-										<img src="images/project1/mnist.png" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="NN_about_learning.html" class="link">
-											Deep Learning on properly and randomly labelled data</a></h3>
-									</header>
-								</article>
-								<article>
-									<span class="image">
-										<img src="images/project2/cnnlayer.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="visualzingCNNLayers.html" class="link">Visualizing CNN layers</a></h3>
-									</header>
-								</article>
+					<div id="main" style='background:black;'>
 
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									</br>
+									Neural networks are usually seen as black box due to their ability to learn the features in space in such high dimension that those might not be comprehensible to humans. However this lack of transparency of network could make it difficult to assert if network has learn close to correct features. In case of Convolutional neural networks, we can visualize the image that maximizes the activation of given layer in the network, giving us ideas to what network learns. For example, if there was layer in network with cat ear looking like feature, we would expect an image of cat as input to the network lighting up that particular layer. We reverse-engineeer this and generate an input image that maximizes the activation of the given layer, this helps us visualize what kind of feature that particular layer looks for!
+									</br></br>
+								</div>
 							</section>
+
 
 					</div>
 

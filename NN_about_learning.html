@@ -1,0 +1,155 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Deep Learning on properly and randomly labelled data</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />    
+	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<!-- Note: The "styleN" class below should match that of the banner element. -->
+					<header id="header" style='background-color:inherit' class="alt style2;">
+						<a href="index.html" class="logo"><strong>guru3</strong></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="projects.html">Projects</a></li>
+							<li><a href="thoughts.html">Thoughts</a></li>
+							<li><a href="about.html">About</a></li>
+						</ul>
+					</nav>
+
+				<!-- Banner -->
+				<!-- Note: The "styleN" class below should match that of the header element. -->
+					<section id="banner" class="style2">
+						<div class="inner">
+							<span class="image">
+								<img src="images/project1/mnist.png" alt=""/>
+							</span>
+							<header class="major" style='background:linear-gradient(to left, #00ffff 0%, #000066 97%);border-radius:25px;opacity:0.8'>
+								<h1>Deep Learning on correctly and randomly labelled data</h1>
+							</header>
+						</div>
+					</section>
+
+				<!-- Main -->
+					<div id="main" style='background:#1F1F1F;color:white'>
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<p>Neural network is simply a pattern finding machine which takes in data and churns out the best corresponding mapping it can learn depending on it's size and epochs! It simply learns to make this mapping as close for <span class=emphasizedtext>training data</span> as possible, the key here is training data! Network does not promise to learn the best mapping for testing data. This is the reason we use validation data to tweak hyperparameters and number of training epochs, so that we don't just overfit on the training data and maybe learn a generalized mapping that could perform as well on testing data. Now, what if we provide neural network with randomly labelled data, will it learn it with as good accuracy as it would have learnt on properly labelled data? Or will it perform poorly?</p>
+									</br>
+
+									<p>Before we go ahead, you can find the notebook link <a href="https://github.com/guru3/ML-Insights/blob/master/3.%20Deep%20Learning%20on%20properly%20and%20randomly%20labelled%20data.ipynb"><span style='color:red;font-weight:bold'>here</span></a>.</br>
+
+									<span class=emphasizedtext>We will be using MNIST data</span> and train a neural network to recognize the digits looking at these 28x28 images. Keras does support querying this dataset using a very simple call.
+									
+									<div class=codeBlock>
+									<span class=codeKeyword>from</span> <span class=codeFunction>keras.datasets</span> <span class=codeKeyword>import</span> mnist</br>
+									<span class=codeVariable>(x_train_raw, y_train_raw), (x_test_raw, y_test_raw)</span><span class=codeGeneral> = mnist.<span class=codeFunction>load_data</span>()</span>
+									</div></br>
+									
+									Once we have the data, next step is to create a neural network model using <span class=emphasizedtext>Keras API</span> which is pretty awesome high level language to quickly create a neural network in very few lines of code.</br></p>
+
+									<p>
+										<div class=codeBlock>
+										<span class=codeVariable>model</span>.<span class=codeFunction>add</span>(Conv2D(32, (3,3), activation='relu', input_shape=(28,28,1) ))</br>
+										<span class=codeVariable>model</span>.<span class=codeFunction>add</span>(Conv2D(32, (3, 3), activation='relu'))</br>
+										<span class=codeVariable>model</span>.<span class=codeFunction>add</span>(MaxPooling2D((2, 2)))</br>
+										<span class=codeVariable>model</span>.<span class=codeFunction>add</span>(Conv2D(16, (3, 3), activation='relu'))</br>
+										<span class=codeVariable>model</span>.<span class=codeFunction>add</span>(Flatten())</br>
+										<span class=codeVariable>model</span>.<span class=codeFunction>add</span>(Dense(32, activation='relu'))</br>
+										<span class=codeVariable>model</span>.<span class=codeFunction>add</span>(Dense(total_classes, activation='softmax'))</br>
+										<span class=codeVariable>model</span>.<span class=codeFunction>compile</span>(loss=keras.losses.categorical_crossentropy,optimizer=keras.optimizers.<span class=codeFunction>Adadelta</span>(),metrics=['accuracy'])</br>
+										</div></br>
+
+										<span class=subsectionHeader>Training on correctly labelled data</span></br>
+										Now that we have the data and have built the model, let's train the model with correctly labelled data as loaded from keras datasets. Let's run it for 10 epochs...
+										We observe that we are able to achieve 99+% accuracy after just 5 epochs!
+									</p>
+								
+								 <figure>
+  								<center><img src="images/project1/graph1.png" alt="Accuracy graph using correct data" class=plot>
+  								<figcaption>Accuracy for model running on correctly labelled data.</figcaption></center></br>
+								</figure> 
+
+
+								<p>
+								<span class=subsectionHeader>Training on randomly labelled data</span></br>
+									Next we try training the model with totally random data and the same model as defined above. For each image in our dataset, we randomly assign it a number! We are able to achieve slightly more than 30% accuracy after 50 iterations, which is very poor! We also see that model is deviating from validation data, this can be explained by the fact that the distribution of training and validation data is different! Maybe the network isn't big enough to be able to learn the patterns in this randomly labelled data!</p>
+								<figure>
+  								<center><img src="images/project1/graph2.png" alt="Accuracy graph using randomly labelled data" class=plot>
+								<figcaption>Accuracy for model running on randomly labelled data.</figcaption></center></br>
+								</figure> 
+
+								<p>
+									<span class=subsectionHeader>Training a BIGGER network on randomly labelled data</span></br>
+									So we create a bigger neural network! Note that our expectations at this point are to get 99+% accuracy on the training data. Network will perform very poorly on the validation and testing dataset anyways, because the patterns learnt on randomly labelled training dataset are not valid for validation and testing dataset at all! In essence, we expect network to memoize the training data mapping</p>
+									<div class=codeBlock>
+									<span class=codeVariable>model</span>.<span class=codeFunction>add</span>(Conv2D(128, (3,3), activation='relu', input_shape=(28,28,1) ))</br>
+									<span class=codeVariable>model</span>.<span class=codeFunction>add</span>(Conv2D(128, (3, 3), activation='relu'))</br>
+									<span class=codeVariable>model</span>.<span class=codeFunction>add</span>(MaxPooling2D((2, 2)))</br>
+									<span class=codeVariable>model</span>.<span class=codeFunction>add</span>(Conv2D(128, (3, 3), activation='relu'))</br>
+									<span class=codeVariable>model</span>.<span class=codeFunction>add</span>(Flatten())</br>
+									<span class=codeVariable>model</span>.<span class=codeFunction>add</span>(Dense(128, activation='relu'))</br>
+									<span class=codeVariable>model</span>.<span class=codeFunction>add</span>(Dense(total_classes, activation='softmax'))</br>
+									<span class=codeVariable>model</span>.<span class=codeFunction>compile</span>(loss=keras.losses.categorical_crossentropy,optimizer=keras.optimizers.<span class=codeFunction>	Adadelta</span>(),metrics=['accuracy'])</br>
+									</div></br>
+
+								<p> Well well well...We do see 99+% accuracy on the neural network for randomly labelled data! However given the lack of structure in the data, it takes longer time to find a mapping which essentially seems to be a learning the training data. Network takes about 50 iterations to finally achieve 99+% accuracy on training data. Note that, as expected, validation data accuracy is pretty low! If you ponder a bit, 10% accuracy on validation data is exactly what one would get if it were to choose same digit every single time, this seems to be in line with fact that data was created at random, assigning one of the 10 digits, with each digit's probability being 0.1.</p>
+								<figure>
+  								<center><img src="images/project1/graph3.png" alt="Accuracy graph using randomly labelled data" style='background-color:white;'>
+								<figcaption>Accuracy for BIGGER model running on randomly labelled data.</figcaption></center></br>
+								</figure> 
+			
+								<p> <span class=subsectionHeader>What do we learn?</span></br>
+								Neural networks are all about reducing the difference between predicted mapping and actual mapping of the data it is being TRAINED on. The key is "data it's being trained on". If training data is generalized enough and network is suited to learn those generalized patterns, network will perform well on validation and testing datasets too, as we observe in our very first run of model on correctly labelled MNIST data. However, even if you provide the network with incorrect or randomly labelled data, given enough size and epochs to train, a neural network will achieve good accuracy on that dataset too. However due to lack of structure in the training data, the mapping network learns would not be useful on validation and training datasets!
+								</div>
+							</section>
+
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer" style='background-color:black'>
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="https://www.twitter.com/guru3s" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="https://www.instagram.com/guru3s" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="https://www.github.com/guru3" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="https://www.linkedin.com/in/guru3s" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

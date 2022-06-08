@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Guru's blog</title>
+		<title>Projects | Guru's blog</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -18,7 +18,8 @@
 			<div id="wrapper">
 
 				<!-- Header -->
-					<header id="header" style='background-color:inherit' class="alt">
+				<!-- Note: The "styleN" class below should match that of the banner element. -->
+					<header id="header" style='background-color:inherit' class="alt style2">
 						<a href="index.html" class="logo"><strong>guru3</strong></a>
 						<nav>
 							<a href="#menu">Menu</a>
@@ -36,42 +37,64 @@
 					</nav>
 
 				<!-- Banner -->
-					<section id="banner" class="major">
+				<!-- Note: The "styleN" class below should match that of the header element. -->
+					<section id="banner" class="style1">
 						<div class="inner">
+							<span class="image">
+								<img src="images/projects.jpg" alt="" />
+							</span>
 							<header class="major">
-								<h1><span style='background-color:#0099FF;opacity:0.5;color:black;padding:5px;border-radius:25px;'>Guru's Blog!</span></h1>
-								<p><span style='background-color:#0099FF;color:black;padding:10px;opacity:0.8;color:black;font-size:15px;border-radius:15px'>Describing different projects I have been working on!</span></p>
+								<h1>Projects</h1>
 							</header>
 						</div>
 					</section>
 
 				<!-- Main -->
 					<div id="main">
-						<!-- One -->
-							<section id="one" class="tiles" style="background-color:black">
-								<article>
-									<span class="image">
-										<img src="images/project1/mnist.png" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="NN_about_learning.html" class="link">
-											Deep Learning on properly and randomly labelled data</a></h3>
-									</header>
-								</article>
-								<article>
-									<span class="image">
-										<img src="images/project2/cnnlayer.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="visualzingCNNLayers.html" class="link">Visualizing CNN layers</a></h3>
-									</header>
-								</article>
+
+						<section id="one" style='background-color:black'><div class="inner"></div></section>
+
+							<section id="two" class="spotlights">
+								
+								<section style='background-color:black'>
+									<a href="NN_about_learning.html" class="image">
+										<img src="images/project1/mnist.png" alt="" data-position="center center" style='height:300px'/>
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Deep Learning on correctly and randomly labelled data</h3>
+											</header>
+											<p>How is neural network performance different on correctly vs randomly labelled data?</p>
+											<ul class="actions">
+												<li><a href="NN_about_learning.html" class="button">read more</a></li>
+											</ul>
+										</div>
+									</div>
+								</section>
+
+								<section style='background-color:black'>
+									<a href="visualzingCNNLayers.html" class="image">
+										<img src="images/project2/cnnlayer.jpg" alt="" data-position="top center" style='height:300px'/>
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Visualzing CNN Layers</h3>
+											</header>
+											<p>Visualizing CNN layers</p>
+											<ul class="actions">
+												<li><a href="visualzingCNNLayers.html" class="button">read more</a></li>
+											</ul>
+										</div>
+									</div>
+								</section> 
 
 							</section>
 
 					</div>
 
-				<!-- Footer -->
+					<!-- Footer -->
 					<footer id="footer" style='background-color:black'>
 						<div class="inner">
 							<ul class="icons">
