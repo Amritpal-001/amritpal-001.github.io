@@ -2,7 +2,7 @@
 title: "RANZCR CLiP - Catheter and Line Position Challenge"
 collection: competitions
 permalink: /projects/2021_ranzcr_catheter_detection
-excerpt: 'Classify the presence and correct placement of tubes on chest x-rays to save lives, Kaggle'
+excerpt: '<img src="/images/competitions/2021_ranzcr_catheter_detection_GradCam.png" alt="Logo" width="150" height="100" /> Classify the presence and correct placement of tubes on chest x-rays to save lives, Kaggle Competition'
 date: 2021-03-16
 venue: 'Kaggle'
 ---
