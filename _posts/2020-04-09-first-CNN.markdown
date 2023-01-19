@@ -1,0 +1,62 @@
+---
+title:  "My first Image recognition Model"
+date:   2020-04-09 05:30:03 +0530
+tags:
+  - coding
+  - old
+---
+=======================
+
+
+# My first Image recognition Model
+
+For past several months i have been reading about several types of Artificial Intelligence models and finally decided to train one of my own. There are several types, for different tasks. Convolutional neural networks(CNNs) are particularly famous for Image recognition.
+
+CNNs have achieved human level (and beyond) performance in face recognition few years back. Now we are seeing the same trend in Medical Diagnosis, where Models(term used commonly to describe a Artificial intelligence program ) are surpassing experienced Radiologist.
+
+Before we proceed any further i would like to answer any possible criticism to ‘AI in Medicine’. These model are totally intended to assist us Doctors in Faster diagnosis (and not replace us). Though these models have great accuracy in specific tasks, they are very narrow in types of tasks they can do. And also, Treating a patient is multi-dimensional task and Just making diagnosis doesn’t treat the patient.
+
+Apart from bring a Tool in Hand of Doctors, it would also
+
+1\. Help in making a state-of-art Diagnosis at periphery areas with minimal health access(rural and hilly areas).
+
+2\. It will available 24 hours ×7 hours x 365 days, meaning round the clock access.
+
+**My model-**
+
+As you might know, Medical Images are tricky. To simplify the problem, I started with a simpler task of classifying Images as cats,which is sort of “Hello world to CNNs”.
+
+To begin with, I am training a _**VGG-16 model**_ **in Keras and Tensorflow (python libraries for Deep learning)**
+
+**Dataset used – Dogs-vs-Cats from Kaggle.**
+
+**Model – VGG16 (Instead of using a pretrained VGG-16 model, I went just with VGG-16 architecture and trained it from level zero.)**
+
+**For those who are new to CNNS, VGG-16 is a award winning Image recognition model in year 2015. VGG16 is a convolutional neural network model proposed by _K. Simonyan_ and**
+
+**_A. Zisserman_ from the University of Oxford in the paper “Very Deep Convolutional Networks for Large-Scale Image Recognition”.**
+
+**My Model’s accuracy –**
+
+I trained it for 200 epochs(rounds). And could reach to an accuracy of 84.06%. Not bad, but also not great.
+
+Epoch 199/200
+
+accuracy: 0.8875 val\_accuracy: 0.7781  
+Epoch 200/200
+
+accuracy: 0.8406 val\_accuracy: 0.7950
+
+(Actual VGG-16 model achieves 92.7% top-5 test accuracy was trained on ImageNet, which is a dataset of over 14 million images belonging to 1000 classes.)
+
+There’s a lot of scope for improvement and a lot of new model architecture to try.
+
+****Important Questions that need to be answered**** –
+
+1.  What is the information(apart from ‘XYZ’ diagnosis), should a Artificial intelligence model give us, so as to convince us for its accuracy?
+2.  What are the Actual error rate in diagnosis by current state of art Medical diagnosis model and Doctors (we are highly skilled, but always over-worked) ?
+3.  At what percentage of Diagnosis accuracy,can we doctors be comfortable and confident in trusting the model’s decision?
+
+If you are someone related to Medical or AI community, Please Let me know your opinion on these questions, in comments section below or connect via email.
+
+For any info or collaboration, please email me or message me on any of my social media links.
