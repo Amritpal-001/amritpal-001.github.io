@@ -25,14 +25,14 @@ Education
 
 Work experience
 ======
-* Summer 2022: Research Grad Student
-  * Bio-Medical Informatics and Bio-Imaging Laboratory, Georgia tech, Altanta
+* Fall 2022: Research Assistant
+  * Bio-Medical Informatics and Bio-Imaging Laboratory, Georgia Institute of Technology, Altanta
   * Advisor: May D. Wang, Ph.D. Professor of Biomedical Engineering
 * 2021: Clinical Research Physician
   * Qure.ai{https://www.qure.ai} (India) 
 * 2020: AI Research intern- CARING and Mahajan Imaging
 * 2020: Kaggle x4 Expert
-<img src="/images/kaggle_profile_jan2023.png" alt="Normal" height=200/> 
+<img src="/images/kaggle_profile_jan2023.png" alt="Normal" height=150/> 
 
 
 Teaching
@@ -44,3 +44,9 @@ Hobbies
 =======
 When not working on project, amrit works on oil painting, charcoal sketches. He has 
 <img src="/images/hobbies/all_artworks.png" alt="Normal" height=200/> 
+
+
+Previous blogs
+==============
+* Wordpress blog : https://amritpal001.wordpress.com/
+* Wix blog : https://zubabin.wixsite.com/amritpal
