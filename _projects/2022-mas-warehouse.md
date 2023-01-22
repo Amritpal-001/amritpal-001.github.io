@@ -4,7 +4,7 @@ collection: projects
 permalink: /projects/2022-mas-warehouse
 excerpt: '<img src="/images/projects/2022-mas_warehouse_demo.gif" alt="Logo" width="150" height="100" /> Project for CS-7431 Multi-agent systems course, MSCS Gatech, USA'
 date: 2022-12-10
-tags:
+categories:
   - Reinforcement Learning
   - Robotics
 ---

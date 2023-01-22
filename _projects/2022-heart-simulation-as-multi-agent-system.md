@@ -4,7 +4,7 @@ collection: projects
 permalink: /projects/2022-heart-simulation-as-multi-agent-system
 excerpt: '<img src="/images/projects/2022-heart-simulation-as-multi-agent-system-main_idea.jpg" alt="Logo" width="150" height="100" /> Project for Multirobot systems (CS-7631), MSCS Gatech, USA'
 date: 2022-10-25
-tags:
+categories:
   - Reinforcement Learning
 ---
 
