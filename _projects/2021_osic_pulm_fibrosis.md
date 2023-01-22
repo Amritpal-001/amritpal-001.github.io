@@ -5,6 +5,9 @@ permalink: /projects/2021_osic_pulm_fibrosis
 excerpt: 'Position 131/2907, Predict lung function decline, Kaggle'
 date: 2020-10-06
 venue: 'Kaggle'
+tags:
+  - Deep Learning
+  - Computer Vision
 ---
 
 [Competition webpage](https://www.kaggle.com/competitions/osic-pulmonary-fibrosis-progression)

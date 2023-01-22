@@ -5,6 +5,9 @@ permalink: /projects/2021_sartorius_cell_instance_segmentation
 excerpt: 'Position 230/1305, Detect single neuronal cells in microscopy images, Kaggle'
 date: 2021-12-30
 venue: 'Kaggle'
+tags:
+  - Deep Learning
+  - Computer Vision
 ---
 
 

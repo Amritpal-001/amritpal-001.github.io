@@ -3,6 +3,9 @@ title: "EyeAI - Android app"
 collection: projects
 permalink: /projects/2021-eyeai
 excerpt: 'Prototype Deep leanring based android app for eye disease classification <img src="Images/logo_final.png" alt="Logo" width="150" height="100" />' 
+tags:
+  - Deep Learning
+  - Computer Vision
 ---
 
 [Github link to project](https://github.com/Amritpal-001/EyeAI)

@@ -5,6 +5,9 @@ permalink: /projects/2021-mlb_player_digital_engagement
 excerpt: 'Position 65/852, Kaggle'
 date: 2021-07-31
 venue: 'Kaggle'
+tags:
+  - Machine Learning
+  - Time series
 ---
 
 Comp description as per organisers : 

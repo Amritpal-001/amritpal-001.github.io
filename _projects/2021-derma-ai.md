@@ -3,6 +3,9 @@ title: "DermaAI - Deep learning based Skin lesions Classification"
 collection: projects
 permalink: /projects/2021-derma-ai
 excerpt: '<img src="/images/projects/2021-derma-ai-img1.jpg" alt="Logo" width="150" height="100" /> CNNs based classification of skin lesions'
+tags:
+  - Deep Learning
+  - Computer Vision
 ---
 
 CNNs based classification of skin lesions

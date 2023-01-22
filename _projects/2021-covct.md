@@ -2,6 +2,9 @@
 title: "COVCT: GSOC proposal for android application (CovCT) for analyzing COVID and non-COVID data."
 collection: projects
 permalink: /projects/2020-covCT
+tags:
+  - Deep Learning
+  - Computer Vision
 ---
 
 Project proposal for Google GSOC in association with Emory university school of medicine.

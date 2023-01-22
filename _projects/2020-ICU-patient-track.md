@@ -2,6 +2,9 @@
 title: "Deep learning based ICU monitoring of patients using CCTV footage"
 collection: projects
 permalink: /projects/2020-ICU-patient-track
+tags:
+  - Deep Learning
+  - Computer Vision
 ---
 
 ICU monitoring using CCTV footage

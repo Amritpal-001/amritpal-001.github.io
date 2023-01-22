@@ -5,6 +5,8 @@ permalink: /projects/2021_optiver_volatility
 excerpt: 'Position 356/3852, Kaggle, Apply your data science skills to make financial markets better'
 date: 2021-09-27
 venue: 'Kaggle'
+tags:
+  - Machine learning
 ---
 
 

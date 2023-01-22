@@ -5,6 +5,8 @@ permalink: /projects/2022-medical-robotics-kinematics
 excerpt: '<img src="/images/projects/2022-medical-robotics-kinematics_demo.gif" alt="Logo" width="150" height="100" /> Project for CS-6739 Medical robotics course, MSCS Gatech, USA'
 
 date: 2022-12-06
+tags:
+  - Robotics
 ---
 
 Project for CS-6739 Medical robotics course, MSCS Gatech, USA

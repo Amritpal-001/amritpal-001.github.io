@@ -5,6 +5,9 @@ permalink: /projects/2021-commonlit-readability-prize
 excerpt: 'Position 305/3852, Kaggle'
 date: 2021-08-02
 venue: 'Kaggle'
+tags:
+  - Deep Learning
+  - NLP
 ---
 
 #### Rate the complexity of literary passages for grades 3-12 classroom use

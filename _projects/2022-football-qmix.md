@@ -4,6 +4,8 @@ collection: projects
 permalink: /projects/2022-football-qmix
 excerpt: '<img src="/images/projects/2002-football-qmix-pass_but_cant_chase.gif" alt="Logo" width="150" height="100" /> Project for CS-7642, MSCS Gatech, USA'
 date: 2022-04-30
+tags:
+  - Reinforcement Learning
 ---
 
 Github page - https://github.com/Amritpal-001/gfootball_qmix
