@@ -52,6 +52,9 @@
       {% if author.linkedin %}
         <li><a href="https://www.linkedin.com/in/{{ author.linkedin }}"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
       {% endif %}
+      {% if author.kaggle %}
+        <li><a href="https://www.kaggle.com/{{ author.kaggle }}"><i class="fab fa-fw fa-kaggle" aria-hidden="true"></i> Kaggle</a></li>
+      {% endif %}
       {% if author.xing %}
         <li><a href="https://www.xing.com/profile/{{ author.xing }}"><i class="fab fa-fw fa-xing-square" aria-hidden="true"></i> XING</a></li>
       {% endif %}
