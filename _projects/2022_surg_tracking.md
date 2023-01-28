@@ -3,7 +3,7 @@ title: "Surgical Tracking in endoscopic videos"
 collection: competitions
 permalink: /projects/2022_surg_tracking
 excerpt: '<img src="/images/competitions/2022_surg_tracking_01.gif" alt="Logo" width="150" height="100" /> Tracking surgical views in endoscopic videos'
-date: 2021-03-16
+date: 2022-09-15
 venue: 'Grand Challenge'
 tags:
   - Deep Learning
