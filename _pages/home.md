@@ -28,11 +28,3 @@ Education
 
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Famritpal-001.github.io&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=Page+Visits&edge_flat=false)](https://hits.seeyoufarm.com)
 
-  
-
-  <script src="/js/scramble.js"></script>
-  <script>emailScramble = new scrambledString(document.getElementById('email'), 'emailScramble', 'dun@euuygbar.', [12, 9, 7, 6, 11, 13, 2, 8, 3, 1, 5, 4, 10]);
-  </script>
-    <script src="/js/logo.js"></script>
-    <script src="https://d3js.org/d3.v3.min.js"></script>
-    <script type="text/javascript">init();</script>

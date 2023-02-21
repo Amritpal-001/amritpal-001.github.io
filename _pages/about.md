@@ -42,11 +42,5 @@ Teaching
 
 Hobbies
 =======
-When not working on project, amrit works on oil painting, charcoal sketches. He has 
+When not working on project, amrit creates on oil painting, charcoal sketches. He works on mid-size to human sized canvases. 
 <img src="/images/hobbies/all_artworks.png" alt="Normal" height=200/> 
-
-
-Previous blogs
-==============
-* Wordpress blog : https://amritpal001.wordpress.com/
-* Wix blog : https://zubabin.wixsite.com/amritpal
