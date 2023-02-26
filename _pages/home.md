@@ -26,7 +26,8 @@ Education
 |[Drugs Repurposing using ML](https://amritpal-001.github.io/publication/2020-insilico-drug-repurposing) | <img src="/images/publications/drug_repurposing_affinty.png" alt="Logo" height=200 width=200/>  |  | [Ranzcr xray catheter detection competition](https://amritpal-001.github.io/projects/2021_ranzcr_catheter_detection) | <img src="/images/competitions/2021_ranzcr_catheter_detection_GradCam_cropped.png" height=200/> | 
 
 
-<img src="{{ site.url }}/images/projects/2022-mas_warehouse_demo.gif" height = "150"> <img src="{{ site.url }}/images/projects/eyeai_crop.png" height = "150"> <img src="{{ site.url }}/images/projects/2002-football-qmix-fight_the_goalkeeper.gif" height = "150"> <img src="{{ site.url }}/images/projects/2002-football-qmix-fight_the_goalkeeper.gif" height = "150">
+ <a href="https://amritpal-001.github.io/projects/2022-mas-warehouse">
+ <img src="{{ site.url }}/images/projects/2022-mas_warehouse_demo.gif" height = "150"> </a>   <a href="https://amritpal-001.github.io/projects/2022-mas-warehouse"> <img src="{{ site.url }}/images/projects/eyeai_crop.png" height = "150"> </a>   <a href="https://amritpal-001.github.io/projects/2022-mas-warehouse"> <img src="{{ site.url }}/images/projects/2002-football-qmix-fight_the_goalkeeper.gif" height = "150"> </a>   <a href="https://amritpal-001.github.io/projects/2022-mas-warehouse"> <img src="{{ site.url }}/images/projects/2002-football-qmix-fight_the_goalkeeper.gif" height = "150"> </a>   
 
 
 # My projects
