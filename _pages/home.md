@@ -12,10 +12,10 @@ redirect_from:
 Amrit is a MS in computer science Grad student at Georgia Tech, USA. He is trained physician with Bachelor of Medicine and Bachelor of Surgery(MBBS).
 He believes that the fusion of technology to medicine is an essential path to the democratization of health. 
 
-## Projects
 {% include project_timeline.html %}
 
-## Project & Link 
+### Project links 
+(click on image) 
  <a href="https://amritpal-001.github.io/projects/2022-mas-warehouse">
  <img src="{{ site.url }}/images/projects/2022-mas_warehouse_demo.gif" alt="Warehouse robot optimisation" width="250" height="250"> </a>   <a href="https://amritpal-001.github.io/projects/2022-football-qmix"> <img src="{{ site.url }}/images/projects/2002-football-qmix-fight_the_goalkeeper.gif" alt="Team coordination to play Football" width="250" height="250"> </a>    <a href="https://amritpal-001.github.io/projects/2022-medical-robotics-kinematics">
  <img src="{{ site.url }}/images/projects/2022-medical-robotics-kinematics_demo.gif" alt="Robotic arm for suturing" width="250" height="250"> </a>   

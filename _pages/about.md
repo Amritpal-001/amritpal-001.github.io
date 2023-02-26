@@ -5,17 +5,16 @@ permalink: /about/
 author_profile: true
 ---
 
-Dr. Amrit is a MS in computer science Grad student at Georgia Tech, USA. 
-
-He is physician by training and did his Bachelor of Medicine and Bachelor of Surgery(MBBS).
+Amrit is a MS in computer science Grad student at Georgia Tech, USA. He is trained physician with Bachelor of Medicine and Bachelor of Surgery(MBBS).
 He believes that the fusion of technology to medicine is an essential path to the democratization of health. 
 
 Areas of Interests
 ======
-* Reinforcement learning in medical domains(medicine, surgery, radiology, neuroscience)
+* Data Science and Bioinformatics
+* Reinforcement learning in medical domains
 * Medical robotics: kinematics and intelligence
-* Multi-agent systems
 * Multimodality modals: Fusion of 3d images, text and tabular data in deep learning
+* Medical Wearble technology
 * Drug discovery for rare diseases
 
 Education
@@ -32,7 +31,7 @@ Work experience
   * Qure.ai{https://www.qure.ai} (India) 
 * 2020: AI Research intern- CARING and Mahajan Imaging
 * 2020: Kaggle x4 Expert
-<img src="/images/kaggle_profile_jan2023.png" alt="Normal" height=150/> 
+<img src="/images/kaggle_profile_jan2023.png" alt="Normal" height=400  width=400/> 
 
 
 Teaching
@@ -43,4 +42,6 @@ Teaching
 Hobbies
 =======
 When not working on project, amrit creates on oil painting, charcoal sketches. He works on mid-size to human sized canvases. 
+
+
 <img src="/images/hobbies/all_artworks.png" alt="Normal" height=200/> 
