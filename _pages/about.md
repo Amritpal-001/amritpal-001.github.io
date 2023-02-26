@@ -32,7 +32,7 @@ Work experience
 * 2020: AI Research intern- CARING and Mahajan Imaging
 * 2020: Kaggle x4 Expert
 
-<img src="/images/kaggle_profile_jan2023.png" alt="Normal" height=300  width=300/> 
+<img src="/images/kaggle_profile_jan2023.png" alt="Normal" height=600  width=600/> 
 
 
 Teaching
@@ -44,4 +44,4 @@ Hobbies
 =======
 ##### When not working on project, amrit creates on oil painting, charcoal sketches. He works on mid-size to human sized canvases. 
 
-<img src="/images/hobbies/all_artworks.png" alt="Normal" height=300  width=300/> 
+<img src="/images/hobbies/all_artworks.png" alt="Normal" height=600  width=600/> 
