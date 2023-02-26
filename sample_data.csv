@@ -1,9 +1,9 @@
 technology,application,project_name,year,impact,Link
-DL,Medical imaging,Project 1,2019,1,https://amritpal-001.github.io
-DL,Medical imaging,Project 2,2020,1,https://amritpal-001.github.io
+DL,Radiology,Project 1,2019,1,https://amritpal-001.github.io
+DL,Pathology,Project 2,2020,1,https://amritpal-001.github.io
 DL,Health analytics,Project 3,2020,2,https://amritpal-001.github.io
 RL,Surgery,Project 4,2021,2,https://amritpal-001.github.io
 Robotics,Medical robotics,Project 5,2021,3,https://amritpal-001.github.io
-Soft Robotics,Surgical robots,Project 6,2022,3,https://amritpal-001.github.io
+Soft Robotics,Surgery,Project 6,2022,3,https://amritpal-001.github.io
 Causal inference,Health analytics,Project 7,2022,1,https://amritpal-001.github.io
 IOT,Health analytics,Project 8,2023,2,https://amritpal-001.github.io
