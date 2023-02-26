@@ -6,4 +6,4 @@
 - [ ] Jupyter notebooks to blogs: https://github.com/sandeshkatakam/My-Machine_learning-Blog
 - [ ] Sort projects by category
 - [ ] Add logo aniimation like this https://bugra.github.io/ https://github.com/bugra/bugra.github.com/blob/dca1a5e2277ec9de92cef5a2c065954fcec627fd/static/logo.js
-- [ ] 
+- [x] PLotly plot at home page
