@@ -15,7 +15,9 @@ He believes that the fusion of technology to medicine is an essential path to th
 {% include project_timeline.html %}
 
 ### Project links 
-(click on image) 
+#### (click on image) 
+
+
  <a href="https://amritpal-001.github.io/projects/2022-mas-warehouse">
  <img src="{{ site.url }}/images/projects/2022-mas_warehouse_demo.gif" alt="Warehouse robot optimisation" width="250" height="250"> </a>   <a href="https://amritpal-001.github.io/projects/2022-football-qmix"> <img src="{{ site.url }}/images/projects/2002-football-qmix-fight_the_goalkeeper.gif" alt="Team coordination to play Football" width="250" height="250"> </a>    <a href="https://amritpal-001.github.io/projects/2022-medical-robotics-kinematics">
  <img src="{{ site.url }}/images/projects/2022-medical-robotics-kinematics_demo.gif" alt="Robotic arm for suturing" width="250" height="250"> </a>   
