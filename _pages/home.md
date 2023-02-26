@@ -25,6 +25,9 @@ Education
 | [Robotic arm for suturing](https://amritpal-001.github.io/projects/2022-medical-robotics-kinematics) | <img src="/images/projects/2022-medical-robotics-kinematics_demo.gif" height=200/> |  | [Android app to detect eye diseases](https://amritpal-001.github.io/projects/2021-eyeai) | <img src="/images/projects/eyeai_crop.png" height=200/> | 
 |[Drugs Repurposing using ML](https://amritpal-001.github.io/publication/2020-insilico-drug-repurposing) | <img src="/images/publications/drug_repurposing_affinty.png" alt="Logo" height=200 width=200/>  |  | [Ranzcr xray catheter detection competition](https://amritpal-001.github.io/projects/2021_ranzcr_catheter_detection) | <img src="/images/competitions/2021_ranzcr_catheter_detection_GradCam_cropped.png" height=200/> | 
 
+# My projects
+{% include plotly_graph.html %}
+
 
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Famritpal-001.github.io&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=Page+Visits&edge_flat=false)](https://hits.seeyoufarm.com)
 

@@ -249,6 +249,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-redirect-from
+  - webrick
 # mimic GitHub Pages with --safe
 whitelist:
   - jekyll-paginate
