@@ -9,8 +9,10 @@ redirect_from:
   - /home.html
 ---
 
-Amrit is a MS in computer science Grad student at Georgia Tech, USA. He is trained physician with Bachelor of Medicine and Bachelor of Surgery(MBBS).
-He believes that the fusion of technology to medicine is an essential path to the democratization of health. 
+Dr. Amritpal Singh is physician with Bachelor of Medicine and Bachelor of Surgery at Maulana Azad Medical College (Delhi, India), where you gained clinical experience in medicine and surgery. Later he worked as a Clinical Research Physician at Qure.ai, where they contributed to the development of AI-based medical imaging products for lung cancer, traumatic brain injury and tuberculosis.  
+
+He is currently pursuing a Master of Science in Computer Science and machine learning at the Georgia Institute of Technology, USA. He is also Graduate Research Assistant at the BioML Lab at Georgia Tech, where you focused on mutlimodal medical imaging, Alzheimer's disease, causal inference and medical robotics. With a strong passion for research, He has published articles in scientific journals and actively participates in hackathons and competitions.  
+
 
 {% include project_timeline.html %}
 
@@ -30,5 +32,46 @@ He believes that the fusion of technology to medicine is an essential path to th
  <img src="{{ site.url }}/images/publications/drug_repurposing_affinty.png" alt="Drugs Repurposing using ML" width="300" height="300"> </a>   <a href="https://amritpal-001.github.io/projects/2021_ranzcr_catheter_detection"> <img src="{{ site.url }}/images/competitions/2021_ranzcr_catheter_detection_GradCam_cropped.png" alt="Ranzcr xray catheter detection competition" width="300" height="300"> </a>   
 
 
+
+Areas of Interests
+======
+* Data Science and Bioinformatics
+* Reinforcement learning in medical domains
+* Medical robotics: kinematics and intelligence
+* Multimodality modals: Fusion of 3d images, text and tabular data in deep learning
+* Medical Wearble technology
+* Drug discovery for rare diseases
+
+Education
+======
+* M.S. in Computer Science, Georgia institute of technology, 2022 - 2023(expected)
+* M.B.B.S.(Bachelor of Medicine, Bachelor of Surgery: Maulana Azad Medical College, 2021
+
+Work experience
+======
+* Fall 2022: Research Assistant
+  * Bio-Medical Informatics and Bio-Imaging Laboratory, Georgia Institute of Technology, Altanta
+  * Advisor: May D. Wang, Ph.D. Professor of Biomedical Engineering
+* 2021: Clinical Research Physician
+  * Qure.ai{https://www.qure.ai} (India) 
+* 2020: AI Research intern- CARING and Mahajan Imaging
+* 2020: Kaggle x4 Expert
+
+<img src="/images/kaggle_profile_jan2023.png" alt="Normal" height=600  width=600/> 
+
+
+Teaching
+======
+* Deep learning – Teaching Assistant, Neuromatch academy, 2021
+* Computational neuroscience – Teaching Assistant, Neuromatch academy, 2021
+
+Hobbies
+=======
+##### When not working on project, amrit creates on oil painting, charcoal sketches. He works on mid-size to human sized canvases. 
+
+<img src="/images/hobbies/all_artworks.png" alt="Normal" height=600  width=600/> 
+
+
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Famritpal-001.github.io&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=Page+Visits&edge_flat=false)](https://hits.seeyoufarm.com)
+
 
