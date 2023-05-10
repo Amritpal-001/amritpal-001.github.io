@@ -14,7 +14,7 @@ Dr. Amritpal Singh is physician with Bachelor of Medicine and Bachelor of Surger
 He is currently pursuing a Master of Science in Computer Science and machine learning and Graduate Research Assistant at the BioML Lab at the Georgia Institute of Technology, USA. His research focuses on using technologies like Deep learning, Causal inference, and Multimodal methods to do translational work in Alzheimer's disease, Medical imaging, Genomics and Medical robotics. With a strong passion for research, He has published articles in scientific journals and actively participates in hackathons and competitions.  
 
 
-<img src="/images/projects.png" alt="Normal" height=600  width=600/> 
+<img src="/images/projects.png" alt="Normal"/> 
 
 
 ### Project links 
