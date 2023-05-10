@@ -9,12 +9,13 @@ redirect_from:
   - /home.html
 ---
 
-Dr. Amritpal Singh is physician with Bachelor of Medicine and Bachelor of Surgery at Maulana Azad Medical College (Delhi, India), where you gained clinical experience in medicine and surgery. Later he worked as a Clinical Research Physician at Qure.ai, where they contributed to the development of AI-based medical imaging products for lung cancer, traumatic brain injury and tuberculosis.  
+Dr. Amritpal Singh is physician with Bachelor of Medicine and Bachelor of Surgery from Maulana Azad Medical College (India), where he gained clinical experience in medicine and surgery. Later he worked as a Clinical Research Physician at Qure.ai, developing AI-based medical imaging tools for lung cancer, traumatic brain injury and tuberculosis. 
 
-He is currently pursuing a Master of Science in Computer Science and machine learning at the Georgia Institute of Technology, USA. He is also Graduate Research Assistant at the BioML Lab at Georgia Tech, where you focused on mutlimodal medical imaging, Alzheimer's disease, causal inference and medical robotics. With a strong passion for research, He has published articles in scientific journals and actively participates in hackathons and competitions.  
+He is currently pursuing a Master of Science in Computer Science and machine learning and Graduate Research Assistant at the BioML Lab at the Georgia Institute of Technology, USA. His research focuses on using technologies like Deep learning, Causal inference, and Multimodal methods to do translational work in Alzheimer's disease, Medical imaging, Genomics and Medical robotics. With a strong passion for research, He has published articles in scientific journals and actively participates in hackathons and competitions.  
 
 
-{% include project_timeline.html %}
+<img src="/images/projects.png" alt="Normal" height=600  width=600/> 
+
 
 ### Project links 
 #### (click on image) 
@@ -32,9 +33,8 @@ He is currently pursuing a Master of Science in Computer Science and machine lea
  <img src="{{ site.url }}/images/publications/drug_repurposing_affinty.png" alt="Drugs Repurposing using ML" width="300" height="300"> </a>   <a href="https://amritpal-001.github.io/projects/2021_ranzcr_catheter_detection"> <img src="{{ site.url }}/images/competitions/2021_ranzcr_catheter_detection_GradCam_cropped.png" alt="Ranzcr xray catheter detection competition" width="300" height="300"> </a>   
 
 
+## Areas of Interests
 
-Areas of Interests
-======
 * Data Science and Bioinformatics
 * Reinforcement learning in medical domains
 * Medical robotics: kinematics and intelligence
@@ -42,13 +42,12 @@ Areas of Interests
 * Medical Wearble technology
 * Drug discovery for rare diseases
 
-Education
-======
+## Education
 * M.S. in Computer Science, Georgia institute of technology, 2022 - 2023(expected)
 * M.B.B.S.(Bachelor of Medicine, Bachelor of Surgery: Maulana Azad Medical College, 2021
 
-Work experience
-======
+## Work experience
+
 * Fall 2022: Research Assistant
   * Bio-Medical Informatics and Bio-Imaging Laboratory, Georgia Institute of Technology, Altanta
   * Advisor: May D. Wang, Ph.D. Professor of Biomedical Engineering
@@ -60,14 +59,13 @@ Work experience
 <img src="/images/kaggle_profile_jan2023.png" alt="Normal" height=600  width=600/> 
 
 
-Teaching
-======
+## Teaching
 * Deep learning – Teaching Assistant, Neuromatch academy, 2021
 * Computational neuroscience – Teaching Assistant, Neuromatch academy, 2021
 
-Hobbies
-=======
-##### When not working on project, amrit creates on oil painting, charcoal sketches. He works on mid-size to human sized canvases. 
+## Hobbies
+
+When not working on project, amrit creates on oil painting, charcoal sketches. He works on mid-size to human sized canvases. 
 
 <img src="/images/hobbies/all_artworks.png" alt="Normal" height=600  width=600/> 
 
