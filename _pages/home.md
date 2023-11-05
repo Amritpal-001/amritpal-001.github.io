@@ -9,9 +9,12 @@ redirect_from:
   - /home.html
 ---
 
-Dr. Amritpal Singh is physician with Bachelor of Medicine and Bachelor of Surgery from Maulana Azad Medical College (India), where he gained clinical experience in medicine and surgery. Later he worked as a Clinical Research Physician at Qure.ai, developing AI-based medical imaging tools for lung cancer, traumatic brain injury and tuberculosis. 
+Dr. Amritpal Singh, MD, holds a Bachelor of Medicine and Bachelor of Surgery (M.B.B.S) [USA equivalent to MD] from Maulana Azad Medical College, providing a solid foundation in clinical medicine. He is currently pursuing a Master of Science in Computer Science and Machine Learning at Georgia Tech, further expanding his knowledge and expertise.
 
-He is currently pursuing a Master of Science in Computer Science and machine learning and Graduate Research Assistant at the BioML Lab at the Georgia Institute of Technology, USA. His research focuses on using technologies like Deep learning, Causal inference, and Multimodal methods to do translational work in Alzheimer's disease, Medical imaging, Genomics and Medical robotics. With a strong passion for research, He has published articles in scientific journals and actively participates in hackathons and competitions.  
+As a Graduate Research Assistant at the BioML Lab, Amritpal's work revolves around cutting-edge technologies such as Deep Learning, Causal Inference, and Multimodal methods. His research is centered on Alzheimer's disease, Medical Imaging, Genomics, and Medical Robotics, with a focus on translating innovative technologies into practical solutions for healthcare.
+
+
+Dr. Amritpal Singh's role at Emory University is dedicated to the development of quantitative multimodal biomarkers for predicting patient prognosis and outcomes in the challenging realms of colorectal and lung cancer, as well as cardiovascular disease. 
 
 
 <img src="/images/projects.png" alt="Normal"/> 
@@ -36,23 +39,29 @@ He is currently pursuing a Master of Science in Computer Science and machine lea
 ## Areas of Interests
 
 * Data Science and Bioinformatics
-* Reinforcement learning in medical domains
-* Medical robotics: kinematics and intelligence
-* Multimodality modals: Fusion of 3d images, text and tabular data in deep learning
-* Medical Wearble technology
+* Clinical trials and regulations
+* Medical robotics
 * Drug discovery for rare diseases
 
 ## Education
-* M.S. in Computer Science, Georgia institute of technology, 2022 - 2023(expected)
+* M.S. in Computer Science, Georgia institute of technology, 2022 - Apr 2024
 * M.B.B.S.(Bachelor of Medicine, Bachelor of Surgery: Maulana Azad Medical College, 2021
 
 ## Work experience
-
+* Aug 2023: Research Assistant, Emory University
+  * Manager: Anant Madabhushi, PhD at Madabhushi Lab
+  * Developing quantitative multimodal (radiomics, pathomics, genomics) biomarkers to predict patient prognosis and outcomes. Disease area of focus: Colorectal, lung cancer, and Cardiovascular disease
+* Program committee member and Research reviewer: Jan 2023 - Present
+  * NEURIPS conference 2023: Deep Generative Models for Health workshop
+  * NEURIPS conference 2023: GenBio(Generative AI and Biology) workshop
+  * IEEE COMPSAC conference 2023, Italy
 * Fall 2022: Research Assistant
   * Bio-Medical Informatics and Bio-Imaging Laboratory, Georgia Institute of Technology, Altanta
   * Advisor: May D. Wang, Ph.D. Professor of Biomedical Engineering
 * 2021: Clinical Research Physician
   * Qure.ai{https://www.qure.ai} (India) 
+* Junior Resident: Lok Nayak Hospital:Apr 2020 - Apr 2021
+  * Clinical rotation at Lok Nayak Hospital and GB Pant Institute of Postgraduate Medical Education & Research(GIPMER), Delhi
 * 2020: AI Research intern- CARING and Mahajan Imaging
 * 2020: Kaggle x4 Expert
 
