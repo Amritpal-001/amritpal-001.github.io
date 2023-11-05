@@ -4,7 +4,7 @@ collection: publications
 permalink: /publication/2023-tissue-retract
 excerpt: 'Learning to control DaVinci surgical robot for soft tissue manipulation using expert demonstrations.'
 date: 2023-09-20
-venue: 'MICCAI 2023 conference'
+venue: 'MICCAI conference'
 paperurl: 'https://doi.org/10.48550/arXiv.2309.00837'
 ---
 

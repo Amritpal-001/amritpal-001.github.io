@@ -4,7 +4,7 @@ collection: publications
 permalink: /publication/2023-multimodal-alz
 excerpt: 'Learning Alzheimer’s disease stage classification using multimodal data: MRI, PET, EHR, and Genomics data. Published at IEEE BIBM conference 2023'
 date: 2023-10-20
-venue: 'IEEE BIBM 2023 conference'
+venue: 'IEEE BIBM conference'
 paperurl: 
 ---
 

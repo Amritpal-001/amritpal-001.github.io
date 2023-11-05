@@ -4,7 +4,7 @@ collection: publications
 permalink: /publication/2023-cont-learn-healthcare
 excerpt: 'Building medical imaging AI that can learn new diseases without catastrophic forgetting on previous tasks, in different medical modalities, specialties, and hospitals.'
 date: 2023-10-25
-venue: 'NEURIPS 2023'
+venue: 'NEURIPS'
 paperurl: 
 ---
 

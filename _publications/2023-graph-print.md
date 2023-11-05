@@ -4,7 +4,7 @@ collection: publications
 permalink: /publication/2023-graph-print
 excerpt: 'Combining traditional molecular and protein features with 3D features from graph neural network for drug target aﬀinity prediction.'
 date: 2023-10-25
-venue: 'NEURIPS 2023'
+venue: 'NEURIPS'
 paperurl: 
 ---
 
