@@ -15,6 +15,8 @@ redirect_from:
 
 <iframe width="560" height="315" src="https://youtu.be/9z0tZaCwljA" frameborder="0" allowfullscreen></iframe>
 
+[![Pitch Video](/images/motionEase/motionEase_videothumbnail.png)](https://youtu.be/https://youtu.be/9z0tZaCwljA)
+
 
 Download the pitch deck this link: 
 [Pitch deck](/files/MotionEase_pitch.pdf)
