@@ -29,5 +29,6 @@ Download the pitch deck this link:
 <img src="/images/motionEase/motionEase_slide004.png" alt="Normal"/> 
 
 
-# Pitch video
-[![Pitch Video](/images/motionEase/motionEase_videothumbnail.png)](https://youtu.be/9z0tZaCwljA)
+# Team
+<img src="/images/motionEase/motionEase_team.png" alt="Normal"/> 
+
