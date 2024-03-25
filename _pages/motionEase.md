@@ -10,5 +10,20 @@ redirect_from:
 
 {% include base_path %}
 
-Download the ppitch deck this link:
+### Redefining Parkinson's Care with Personalized Remote Symptom Tracking and Dose Calibration
+
+
+
+## Download the ppitch deck this link:
 [Pitch deck](/files/MotionEase_pitch.pdf)
+
+
+<img src="/images/motionEase/motionEase_slide001.png" alt="Normal"/> 
+
+## Problem statement
+<img src="/images/motionEase/motionEase_slide002.png" alt="Normal"/> 
+
+## Chain of value
+<img src="/images/motionEase/motionEase_slide003.png" alt="Normal"/> 
+
+<img src="/images/motionEase/motionEase_slide004.png" alt="Normal"/> 
