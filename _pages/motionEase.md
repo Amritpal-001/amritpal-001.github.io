@@ -13,6 +13,8 @@ redirect_from:
 ## Redefining Parkinson's Care with Personalized Remote Symptom Tracking and Dose Calibration
 
 
+<iframe width="560" height="315" src="https://youtu.be/9z0tZaCwljA" frameborder="0" allowfullscreen></iframe>
+
 
 Download the pitch deck this link: 
 [Pitch deck](/files/MotionEase_pitch.pdf)
