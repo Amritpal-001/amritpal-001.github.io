@@ -19,7 +19,8 @@ Areas of Interests
 
 Education
 ======
-* M.S. in Computer Science, Georgia institute of technology, 2022 - 2023(expected)
+* PhD: Emory University: Advisor: Dr Anant Madabhushi. (2024- Present)
+* M.S. in Computer Science, Georgia institute of technology, 2022 - 2024
 * M.B.B.S.(Bachelor of Medicine, Bachelor of Surgery: Maulana Azad Medical College, 2021
 
 Work experience

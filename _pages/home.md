@@ -9,12 +9,11 @@ redirect_from:
   - /home.html
 ---
 
-Dr. Amritpal Singh, MD, holds a Bachelor of Medicine and Bachelor of Surgery (M.B.B.S) [USA equivalent to MD] from Maulana Azad Medical College, providing a solid foundation in clinical medicine. He is currently pursuing a Master of Science in Computer Science and Machine Learning at Georgia Tech, further expanding his knowledge and expertise.
+Dr. Amritpal Singh, MD, holds a Bachelor of Medicine and Bachelor of Surgery (M.B.B.S) [USA equivalent to MD] from Maulana Azad Medical College, providing a solid foundation in clinical medicine. He is currently pursuing a Master of Science in Computer Science with a specialization in Machine Learning at Georgia Tech, further expanding his knowledge and expertise.
 
-As a Graduate Research Assistant at the BioML Lab, Amritpal's work revolves around cutting-edge technologies such as Deep Learning, Causal Inference, and Multimodal methods. His research is centered on Alzheimer's disease, Medical Imaging, Genomics, and Medical Robotics, with a focus on translating innovative technologies into practical solutions for healthcare.
+Previously, as a Graduate Research Assistant at the BioML Lab, Dr. Singh worked on cutting-edge technologies such as Deep Learning, Causal Inference, and Multimodal methods. His research focused on Alzheimer’s disease, medical imaging, genomics, and medical robotics, with an emphasis on translating innovative technologies into practical solutions for healthcare.
 
-
-Dr. Amritpal Singh's role at Emory University is dedicated to the development of quantitative multimodal biomarkers for predicting patient prognosis and outcomes in the challenging realms of colorectal and lung cancer, as well as cardiovascular disease. 
+Dr. Singh is currently pursuing his PhD at Emory University, where his work is dedicated to the development of quantitative multimodal biomarkers for predicting patient prognosis and outcomes in the complex domains of colorectal and lung cancer, as well as cardiovascular disease.
 
 
 <img src="/images/projects.png" alt="Normal"/> 
@@ -44,6 +43,7 @@ Dr. Amritpal Singh's role at Emory University is dedicated to the development of
 * Drug discovery for rare diseases
 
 ## Education
+* PhD: Emory University: Advisor: Dr Anant Madabhushi. (2024- Present)
 * M.S. in Computer Science, Georgia institute of technology, 2022 - Apr 2024
 * M.B.B.S.(Bachelor of Medicine, Bachelor of Surgery: Maulana Azad Medical College, 2021
 
