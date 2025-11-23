@@ -154,7 +154,7 @@
     margin-top: 0.25rem;
   }
 
-  @include at-breakpoint(lg) {
+  @include breakpoint($large) {
     .archive__item { padding: 0.5rem 0; }
   }
 }
