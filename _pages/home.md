@@ -2,8 +2,7 @@
 permalink: /
 title: "Amritpal Singh"
 excerpt: "Home page"
-author_profile: true
-redirect_from: 
+redirect_from:
   - /home/
   - /home.md
   - /home.html
