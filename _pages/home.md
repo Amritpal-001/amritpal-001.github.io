@@ -9,7 +9,7 @@ redirect_from:
   - /home.html
 ---
 
-<img src="/images/Phd+outline.png" alt="Normal"/> 
+<img src="/images/Phd_outline.png" alt="Normal"/> 
 
 
 Dr. Amritpal Singh is a physician-scientist with training that bridges medicine, computer science, and artificial intelligence. With an M.B.B.S. from Maulana Azad Medical College and an MS in Computer Science from Georgia Tech, he has built a foundation that spans clinical care and advanced computation. His early work at the BioML Lab involved deep learning, causal inference, multimodal modeling, and medical robotics, focusing on Alzheimer’s disease, genomics, and imaging. He has also contributed as a reviewer and program committee member for major AI conferences.
