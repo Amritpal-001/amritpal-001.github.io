@@ -115,6 +115,50 @@
   }
 }
 
+/* Compact styles specifically for the Publications listing. */
+.archive--publications {
+  .archive__list {
+    margin-top: 0.2em;
+  }
+
+  .archive__item {
+    padding: 0.45rem 0;
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+  }
+
+  .archive__item-title {
+    margin: 0 0 0.15rem 0;
+    font-size: 1rem;
+    line-height: 1.2;
+    font-weight: 600;
+  }
+
+  .archive__meta,
+  .archive__item-citation,
+  .archive__item-excerpt {
+    margin: 0;
+    padding: 0;
+    line-height: 1.35;
+    font-size: 0.95rem;
+    color: rgba(0,0,0,0.72);
+  }
+
+  .archive__item-citation {
+    margin-top: 0.18rem;
+    font-size: 0.9rem;
+    color: rgba(0,0,0,0.56);
+  }
+
+  .archive__item > * + * {
+    margin-top: 0.25rem;
+  }
+
+  @include at-breakpoint(lg) {
+    .archive__item { padding: 0.5rem 0; }
+  }
+}
+
 
 /*
    Grid view

@@ -39,7 +39,7 @@
     {% endif %}
 
         {% if post.collection == 'publications' %}
-          <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
+          <p class="archive__item-citation">Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% endif %}
           
     {% if post.collection == 'publications'   or  post.collection == 'projects'  %}    
@@ -52,11 +52,11 @@
     
 
     {% if post.citation and post.paperurl %}
-      <p>Recommended citation: {{ post.citation }} <a href="{{ post.paperurl }}"><u>{{ post.paperurl }}</u></a></p>
+      <p class="archive__item-citation">Recommended citation: {{ post.citation }} <a href="{{ post.paperurl }}"><u>{{ post.paperurl }}</u></a></p>
     {% elsif post.citation %}
-      <p>Recommended citation: {{ post.citation }} </p>
+      <p class="archive__item-citation">Recommended citation: {{ post.citation }} </p>
     {% elsif post.paperurl %}
-      <p>Download pdf here <a href=" {{ post.paperurl }} "><u>here</u></a></p>
+      <p class="archive__item-citation">Download pdf here <a href=" {{ post.paperurl }} "><u>here</u></a></p>
     {% endif %}
 
   </article>
