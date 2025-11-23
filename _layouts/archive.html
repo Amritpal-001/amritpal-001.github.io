@@ -16,7 +16,12 @@ layout: default
   {% include analytics.html %}
   {% include sidebar.html %}
 
-  <div class="archive">
+  {%- assign is_publications = false -%}
+  {%- if page.title == "Publications" or page.permalink == "/publications/" -%}
+    {%- assign is_publications = true -%}
+  {%- endif -%}
+
+  <div class="archive{% if is_publications %} archive--publications{% endif %}">
     {% unless page.header.overlay_color or page.header.overlay_image %}
       <h1 class="page__title">{{ page.title }}</h1>
     {% endunless %}
