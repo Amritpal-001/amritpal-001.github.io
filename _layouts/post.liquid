@@ -60,9 +60,10 @@ layout: default
 
   <article class="post-content">
     {% if page.toc and page.toc.beginning %}
-      <div id="table-of-contents">
-        {% toc %}
-      </div>
+      <!-- Client-side TOC: use bootstrap-toc JS instead of jekyll-toc plugin
+           Replaces the Liquid `{% toc %}` tag which isn't available in GitHub Pages' build.
+      -->
+      <nav id="toc-sidebar" data-toggle="toc" role="navigation" aria-label="Table of contents"></nav>
       <hr>
     {% endif %}
     <div id="markdown-content">
