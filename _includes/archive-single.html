@@ -34,34 +34,35 @@
       {% endif %}
     </h2>
 
-    {% if post.read_time or post.collection == 'publications' %}
-      <p class="page__meta">
-        {% if post.read_time %}
-          <i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}
-        {% endif %}
-        {% if post.collection == 'publications' %}
-          {% if post.read_time %}&nbsp;|&nbsp;{% endif %}
-          <small>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}</small>
-        {% endif %}
-      </p>
-    {% endif %}
+    {%- comment -%}
+    Consolidated meta + publication + citation/PDF into one compact inline line.
+    {%- endcomment -%}
+    {% comment %} replaced previous separate page__meta and archive__item-citation blocks {% endcomment %}
+    <p class="page__meta">
+      {% if post.read_time %}
+        <i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}
+      {% endif %}
+      {% if post.collection == 'publications' %}
+        {% if post.read_time %}&nbsp;|&nbsp;{% endif %}
+        <small>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}</small>
+      {% endif %}
+
+      {% assign has_citation = post.citation %}
+      {% assign has_pdf = post.paperurl %}
+      {% if has_citation or has_pdf %}
+        {% if post.read_time or post.collection == 'publications' %}&nbsp;|&nbsp;{% endif %}
+        <small>
+          {% if has_citation %}Recommended: {{ post.citation }}{% endif %}
+          {% if has_citation and has_pdf %}&nbsp;|&nbsp;{% endif %}
+          {% if has_pdf %}<a href="{{ post.paperurl }}">PDF</a>{% endif %}
+        </small>
+      {% endif %}
+    </p>
 
     {% if post.collection == 'publications' or post.collection == 'projects' %}
       {% if post.excerpt %}
         <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}{% if site.read_more == 'enabled' %} <strong><a href="{{ base_path }}{{ post.url }}" rel="permalink">Read more</a></strong>{% endif %}</p>
       {% endif %}
-    {% endif %}
-
-    {% if post.citation or post.paperurl %}
-      <p class="archive__item-citation"><small>
-        {% if post.citation and post.paperurl %}
-          Recommended citation: {{ post.citation }} <a href="{{ post.paperurl }}">{{ post.paperurl }}</a>
-        {% elsif post.citation %}
-          Recommended citation: {{ post.citation }}
-        {% elsif post.paperurl %}
-          Download PDF: <a href="{{ post.paperurl }}">here</a>
-        {% endif %}
-      </small></p>
     {% endif %}
 
   </article>
