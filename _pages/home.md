@@ -17,6 +17,17 @@ Dr. Amritpal Singh is a physician-scientist with training that bridges medicine,
 He is now pursuing his PhD at Emory University under the mentorship of Dr. Anant Madabhushi, where his research centers on developing quantitative multimodal biomarkers that integrate radiology, pathology, genomics, and ocular imaging to predict patient outcomes in colorectal and lung cancer and cardiovascular disease. His broader work includes AI-driven early diagnosis, risk prediction, surgical autonomy, and continual learning, with the aim of creating clinically actionable tools that improve decision-making and transform patient care.
 
 
+{% if author.googlescholar %}
+  You can also find my articles on <u><a href="{{author.googlescholar}}">my Google Scholar profile</a>.</u>
+{% endif %}
+
+{% include base_path %}
+
+{% for post in site.publications reversed %}
+  {% include archive-single.html %}
+{% endfor %}
+
+
 
 ### Project links 
 #### (click on image) 
@@ -32,6 +43,7 @@ He is now pursuing his PhD at Emory University under the mentorship of Dr. Anant
  
  <a href="https://amritpal-001.github.io/publication/2020-insilico-drug-repurposing">
  <img src="{{ site.url }}/images/publications/drug_repurposing_affinty.png" alt="Drugs Repurposing using ML" width="300" height="300"> </a>   <a href="https://amritpal-001.github.io/projects/2021_ranzcr_catheter_detection"> <img src="{{ site.url }}/images/competitions/2021_ranzcr_catheter_detection_GradCam_cropped.png" alt="Ranzcr xray catheter detection competition" width="300" height="300"> </a>   
+
 
 
 ## Areas of Interests
