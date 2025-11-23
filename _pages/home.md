@@ -19,7 +19,7 @@ Dr. Amritpal Singh is a physician-scientist with training that bridges medicine,
 He is now pursuing his PhD at Emory University under the mentorship of Dr. Anant Madabhushi, where his research centers on developing quantitative multimodal biomarkers that integrate radiology, pathology, genomics, and ocular imaging to predict patient outcomes in colorectal and lung cancer and cardiovascular disease. His broader work includes AI-driven early diagnosis, risk prediction, surgical autonomy, and continual learning, with the aim of creating clinically actionable tools that improve decision-making and transform patient care.
 
 
-### Publications 
+## Publications 
 
 Please refer to my<u><a href="{{author.googlescholar}}">Google Scholar profile for the full list</a>.</u>
 
@@ -31,7 +31,7 @@ Please refer to my<u><a href="{{author.googlescholar}}">Google Scholar profile f
 
 
 
-### Project links 
+## Project links 
 #### (click on image) 
 
 <style>
@@ -101,17 +101,11 @@ Please refer to my<u><a href="{{author.googlescholar}}">Google Scholar profile f
 
 </div>
 
-## Areas of Interests
-
-* Data Science and Bioinformatics
-* Clinical trials and regulations
-* Medical robotics
-* Drug discovery for rare diseases
 
 ## Education
 * PhD: Emory University: Advisor: Dr Anant Madabhushi. (2024- Present)
 * M.S. in Computer Science, Georgia institute of technology, 2022 - Apr 2024
-* M.B.B.S.(Bachelor of Medicine, Bachelor of Surgery: Maulana Azad Medical College, 2021
+* M.B.B.S.(Bachelor of Medicine, Bachelor of Surgery): Maulana Azad Medical College, 2021
 
 ## Work experience
 * Aug 2023: Research Assistant, Emory University
@@ -131,18 +125,9 @@ Please refer to my<u><a href="{{author.googlescholar}}">Google Scholar profile f
 * 2020: AI Research intern- CARING and Mahajan Imaging
 * 2020: Kaggle x4 Expert
 
-<img src="/images/kaggle_profile_jan2023.png" alt="Normal" height=600  width=600/> 
-
-
 ## Teaching
 * Deep learning – Teaching Assistant, Neuromatch academy, 2021
 * Computational neuroscience – Teaching Assistant, Neuromatch academy, 2021
-
-## Hobbies
-
-When not working on project, amrit creates on oil painting, charcoal sketches. He works on mid-size to human sized canvases. 
-
-<img src="/images/hobbies/all_artworks.png" alt="Normal" height=600  width=600/> 
 
 
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Famritpal-001.github.io&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=Page+Visits&edge_flat=false)](https://hits.seeyoufarm.com)
