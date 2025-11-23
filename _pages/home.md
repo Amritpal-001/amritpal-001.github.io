@@ -36,36 +36,73 @@ He is now pursuing his PhD at Emory University under the mentorship of Dr. Anant
 ### Project links 
 #### (click on image) 
 
+<style>
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
 
-<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+.project-item {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+}
 
-  <a href="https://amritpal-001.github.io/projects/2022-mas-warehouse">
-    <img src="{{ site.url }}/images/projects/2022-mas_warehouse_demo.gif" alt="Warehouse robot optimisation" width="300" height="300">
+.project-item img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.project-title {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+</style>
+
+<div class="project-grid">
+
+  <a href="https://amritpal-001.github.io/projects/2022-mas-warehouse" class="project-item">
+    <img src="{{ site.url }}/images/projects/2022-mas_warehouse_demo.gif" alt="Warehouse robot optimisation">
+    <div class="project-title">Warehouse Robot Optimisation</div>
   </a>
 
-  <a href="https://amritpal-001.github.io/projects/2022-football-qmix">
-    <img src="{{ site.url }}/images/projects/2002-football-qmix-fight_the_goalkeeper.gif" alt="Team coordination to play Football" width="300" height="300">
+  <a href="https://amritpal-001.github.io/projects/2022-football-qmix" class="project-item">
+    <img src="{{ site.url }}/images/projects/2002-football-qmix-fight_the_goalkeeper.gif" alt="Team coordination to play Football">
+    <div class="project-title">Team Coordination to Play Football</div>
   </a>
 
-  <a href="https://amritpal-001.github.io/projects/2022-medical-robotics-kinematics">
-    <img src="{{ site.url }}/images/projects/2022-medical-robotics-kinematics_demo.gif" alt="Robotic arm for suturing" width="300" height="300">
+  <a href="https://amritpal-001.github.io/projects/2022-medical-robotics-kinematics" class="project-item">
+    <img src="{{ site.url }}/images/projects/2022-medical-robotics-kinematics_demo.gif" alt="Robotic arm for suturing">
+    <div class="project-title">Robotic Arm for Suturing</div>
   </a>
 
-  <a href="https://amritpal-001.github.io/projects/2021-eyeai">
-    <img src="{{ site.url }}/images/projects/eyeai_crop.png" alt="Android app to detect eye diseases" width="300" height="300">
+  <a href="https://amritpal-001.github.io/projects/2021-eyeai" class="project-item">
+    <img src="{{ site.url }}/images/projects/eyeai_crop.png" alt="Android app to detect eye diseases">
+    <div class="project-title">Android App to Detect Eye Diseases</div>
   </a>
 
-  <a href="https://amritpal-001.github.io/publication/2020-insilico-drug-repurposing">
-    <img src="{{ site.url }}/images/publications/drug_repurposing_affinty.png" alt="Drugs Repurposing using ML" width="300" height="300">
+  <a href="https://amritpal-001.github.io/publication/2022_surg_tracking" class="project-item">
+    <img src="{{ site.url }}/images/competitions/2022_surg_tracking_01.gif" alt="Surgical tracking">
+    <div class="project-title">Surgical Tracking</div>
   </a>
 
-  <a href="https://amritpal-001.github.io/projects/2021_ranzcr_catheter_detection">
-    <img src="{{ site.url }}/images/competitions/2021_ranzcr_catheter_detection_clahe_augmentation.png" alt="Ranzcr xray catheter detection competition" width="300" height="300">
-
+  <a href="https://amritpal-001.github.io/projects/2021_ranzcr_catheter_detection" class="project-item">
+    <img src="{{ site.url }}/images/competitions/2021_ranzcr_catheter_detection_clahe_augmentation.png" alt="Ranzcr xray catheter detection competition">
+    <div class="project-title">Ranzcr X-ray Catheter Detection</div>
   </a>
 
 </div>
-
 
 ## Areas of Interests
 
