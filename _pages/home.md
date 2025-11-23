@@ -60,7 +60,8 @@ He is now pursuing his PhD at Emory University under the mentorship of Dr. Anant
   </a>
 
   <a href="https://amritpal-001.github.io/projects/2021_ranzcr_catheter_detection">
-    <img src="{{ site.url }}/images/competitions/2021_ranzcr_catheter_detection_GradCam_cropped.png" alt="Ranzcr xray catheter detection competition" width="300" height="300">
+    <img src="{{ site.url }}/images/competitions/2021_ranzcr_catheter_detection_clahe_augmentation.png" alt="Ranzcr xray catheter detection competition" width="300" height="300">
+
   </a>
 
 </div>
