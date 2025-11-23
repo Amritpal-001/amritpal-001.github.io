@@ -9,14 +9,13 @@ redirect_from:
   - /home.html
 ---
 
-Dr. Amritpal Singh, MD, holds a Bachelor of Medicine and Bachelor of Surgery (M.B.B.S) [USA equivalent to MD] from Maulana Azad Medical College, providing a solid foundation in clinical medicine. He is currently pursuing a Master of Science in Computer Science with a specialization in Machine Learning at Georgia Tech, further expanding his knowledge and expertise.
-
-Previously, as a Graduate Research Assistant at the BioML Lab, Dr. Singh worked on cutting-edge technologies such as Deep Learning, Causal Inference, and Multimodal methods. His research focused on Alzheimer’s disease, medical imaging, genomics, and medical robotics, with an emphasis on translating innovative technologies into practical solutions for healthcare.
-
-Dr. Singh is currently pursuing his PhD at Emory University, where his work is dedicated to the development of quantitative multimodal biomarkers for predicting patient prognosis and outcomes in the complex domains of colorectal and lung cancer, as well as cardiovascular disease.
+<img src="/images/Phd+outline.png" alt="Normal"/> 
 
 
-<img src="/images/projects.png" alt="Normal"/> 
+Dr. Amritpal Singh is a physician-scientist with training that bridges medicine, computer science, and artificial intelligence. With an M.B.B.S. from Maulana Azad Medical College and an MS in Computer Science from Georgia Tech, he has built a foundation that spans clinical care and advanced computation. His early work at the BioML Lab involved deep learning, causal inference, multimodal modeling, and medical robotics, focusing on Alzheimer’s disease, genomics, and imaging. He has also contributed as a reviewer and program committee member for major AI conferences.
+
+He is now pursuing his PhD at Emory University under the mentorship of Dr. Anant Madabhushi, where his research centers on developing quantitative multimodal biomarkers that integrate radiology, pathology, genomics, and ocular imaging to predict patient outcomes in colorectal and lung cancer and cardiovascular disease. His broader work includes AI-driven early diagnosis, risk prediction, surgical autonomy, and continual learning, with the aim of creating clinically actionable tools that improve decision-making and transform patient care.
+
 
 
 ### Project links 
