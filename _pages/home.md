@@ -21,9 +21,7 @@ He is now pursuing his PhD at Emory University under the mentorship of Dr. Anant
 
 ### Publications 
 
-{% if author.googlescholar %}
-  You can also find my articles on <u><a href="{{author.googlescholar}}">my Google Scholar profile</a>.</u>
-{% endif %}
+Please refer to my<u><a href="{{author.googlescholar}}">Google Scholar profile for the full list</a>.</u>
 
 {% include base_path %}
 
@@ -47,7 +45,6 @@ He is now pursuing his PhD at Emory University under the mentorship of Dr. Anant
 .project-item {
   position: relative;
   width: 300px;
-  height: 300px;
   overflow: hidden;
 }
 
