@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+{% comment %}
+Homepage layout — similar to `archive` but without the sidebar so the content can use full width.
+Use this layout by setting `layout: home` in the page front matter (e.g. `/pages/home.md`).
+{% endcomment %}
+
+{% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
+  {% include page__hero.html %}
+{% endif %}
+
+{% if page.url != "/" and site.breadcrumbs %}
+  {% unless paginator %}
+    {% include breadcrumbs.html %}
+  {% endunless %}
+{% endif %}
+
+<div id="main" role="main">
+  {% include analytics.html %}
+
+  <div class="archive archive--home">
+    {% unless page.header.overlay_color or page.header.overlay_image %}
+      <h1 class="page__title">{% if page.title %}{{ page.title }}{% endif %}</h1>
+    {% endunless %}
+    {{ content }}
+  </div>
+</div>
