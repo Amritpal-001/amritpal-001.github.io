@@ -1,3 +1,0 @@
-nbconvert
-pyyaml
-scholarly
