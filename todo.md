@@ -1,4 +1,6 @@
 
+
+
 - [ ] Update resume
 - [x] Kaggle link in sidebar
 - [x] Art work gallery like this https://github.com/zixichen007115/zixichen007115.github.io/edit/master/_pages/leisure_time.md
