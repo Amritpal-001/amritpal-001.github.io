@@ -26,7 +26,7 @@ Please refer to my<u><a href="{{site.author.googlescholar}}">Google Scholar prof
 {% include base_path %}
 
 {% for post in site.publications reversed %}
-  {% include archive-single.html %}
+  {% include archive-single-publication-split.html %}
 {% endfor %}
 
 
