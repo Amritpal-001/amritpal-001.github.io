@@ -15,8 +15,7 @@ The website design is just a modification of [Jon Barron's website](https://jonb
 
 
 Good refernces:
-
-https://nitkannen.github.io/
-https://github.com/leonidk/leonidk.github.io?tab=readme-ov-file
-https://jonbarron.info/
+- https://nitkannen.github.io/
+- https://github.com/leonidk/leonidk.github.io?tab=readme-ov-file
+- https://jonbarron.info/
 
