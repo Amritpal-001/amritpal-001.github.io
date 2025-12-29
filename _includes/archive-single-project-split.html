@@ -1,0 +1,84 @@
+{% include base_path %}
+
+{%- comment -%}
+Project split-card layout:
+- Left: thumbnail image (try: header.teaser, header.image, image; otherwise parse first <img> from excerpt)
+- Right: title, year/categories, links, and excerpt.
+
+Project items in this repo often embed an <img> inside `excerpt`.
+We extract its src when no explicit teaser is present.
+{%- endcomment -%}
+
+{% assign teaser = nil %}
+{% if post.header.teaser %}
+  {% assign teaser = post.header.teaser %}
+{% elsif post.header.image %}
+  {% assign teaser = post.header.image %}
+{% elsif post.image %}
+  {% assign teaser = post.image %}
+{% endif %}
+
+{%- if teaser == nil and post.excerpt -%}
+  {%- assign parts = post.excerpt | split: 'src="' -%}
+  {%- if parts.size > 1 -%}
+    {%- assign teaser = parts[1] | split: '"' | first -%}
+  {%- endif -%}
+{%- endif -%}
+
+{% if post.id %}
+  {% assign title = post.title | markdownify | remove: '<p>' | remove: '</p>' %}
+{% else %}
+  {% assign title = post.title %}
+{% endif %}
+
+<div class="pub-split project-split">
+  <div class="pub-split__media">
+    {% if teaser %}
+      <a class="pub-split__media-link" href="{{ base_path }}{{ post.url }}" rel="permalink">
+        <img class="pub-split__img" src=
+          {% if teaser contains '://' %}
+            "{{ teaser }}"
+          {% else %}
+            "{{ teaser | prepend: base_path }}"
+          {% endif %}
+          alt="{{ title | strip_html | escape }}">
+      </a>
+    {% endif %}
+  </div>
+
+  <div class="pub-split__body">
+    <h2 class="pub-split__title">
+      <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
+    </h2>
+
+    <div class="pub-split__meta">
+      {% if post.date %}
+        <span class="pub-split__year">{{ post.date | date: '%Y' }}</span>
+      {% endif %}
+
+      {% if post.categories and post.categories.size > 0 %}
+        {% if post.date %}<span class="pub-split__sep">|</span>{% endif %}
+        <span class="project-split__cats">
+          {% for c in post.categories %}
+            <span class="project-split__cat">{{ c }}</span>{% unless forloop.last %}, {% endunless %}
+          {% endfor %}
+        </span>
+      {% endif %}
+    </div>
+
+    <div class="pub-split__links">
+      {% if post.github %}<a class="pub-split__link" href="{{ post.github }}">github</a>{% endif %}
+      {% if post.codeurl %}<a class="pub-split__link" href="{{ post.codeurl }}">code</a>{% endif %}
+      {% if post.paperurl %}<a class="pub-split__link" href="{{ post.paperurl }}">paper</a>{% endif %}
+      {% if post.demo %}<a class="pub-split__link" href="{{ post.demo }}">demo</a>{% endif %}
+      {% if post.projecturl %}<a class="pub-split__link" href="{{ post.projecturl }}">project</a>{% endif %}
+      {% if post.external_link %}<a class="pub-split__link" href="{{ post.external_link }}">link</a>{% endif %}
+    </div>
+
+    {% if post.excerpt %}
+      <div class="pub-split__excerpt">
+        {{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}
+      </div>
+    {% endif %}
+  </div>
+</div>

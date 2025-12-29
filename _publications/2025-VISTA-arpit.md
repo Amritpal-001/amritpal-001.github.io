@@ -12,6 +12,8 @@ paperurl: https://doi.org/10.1016/j.ejca.2025.115390
 
 Link: https://doi.org/10.1016/j.ejca.2025.115390
 
+<img src="images/publications/2025-VISTA-arpit.jpg" alt="Normal" height=350/> 
+
 
 Authors:  Arpit Aggarwal, Mayukhmala Jana, Amritpal Singh, Tanmoy Dam, Himanshu Maurya, Tilak Pathak, Sandra Orsulic, Kailin Yang, Deborah Chute, Justin A Bishop, Farhoud Faraji, Wade M Thorstad, Shlomo Koyfman, Scott Steward, Qiuying Shi, Vlad Sandulache, Nabil F Saba, James S Lewis Jr, Germán Corredor, Anant Madabhushi
 
