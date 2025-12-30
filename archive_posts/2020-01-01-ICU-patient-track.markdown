@@ -3,6 +3,8 @@ layout: post
 title: "Deep learning based ICU monitoring of patients using CCTV footage"
 date: 2020-01-01 00:00:00 +00:00
 categories: projects
+image: /images/projects/2020-ICU-patient-track-patient_activity.mkv
+
 tags:
   - Deep Learning
   - Computer Vision

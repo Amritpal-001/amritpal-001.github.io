@@ -2,7 +2,7 @@
 layout: post
 title: "EyeAI - Android app"
 date: 2021-01-01 00:00:00 +00:00
-image: /images/logo_final.png
+image: /images/projects/2021-eyeai-Correct_diagnosis001.jpg
 categories: projects
 tags:
   - Deep Learning

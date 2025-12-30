@@ -109,11 +109,15 @@ span.highlight {
   line-height: 1.5;
 }
 .news-date {
-  color: #f09228; /* matches hover accent */
+  color: #178d08; /* matches hover accent */
+  font-weight: 700;
+}
+.news-imp-tag {
+  color: #d02317; /* matches link color */
   font-weight: 700;
 }
 .news-tag {
-  color: #1772d0; /* matches link color */
+  color: #1767d0; /* matches link color */
   font-weight: 700;
 }
 

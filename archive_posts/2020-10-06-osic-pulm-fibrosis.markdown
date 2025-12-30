@@ -4,6 +4,7 @@ title: "OSIC Pulmonary Fibrosis Progression"
 date: 2020-10-06 00:00:00 +00:00
 categories: projects
 venue: 'Kaggle'
+
 tags:
   - Deep Learning
   - Computer Vision

@@ -3,6 +3,7 @@ layout: post
 title: "Validation of expert system enhanced deep learning algorithm for automated screening for COVID-Pneumonia on chest X-rays"
 date: 2021-12-01 00:00:00 +00:00
 categories: research
+image: /images/publications/2021_deep_learning_covid.png
 venue: 'Nature - Scientific Reports'
 website: https://doi.org/10.1038/s41598-021-02003-w
 ---
