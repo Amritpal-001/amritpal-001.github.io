@@ -7,16 +7,9 @@ categories: projects
 tags:
   - Deep Learning
   - Computer Vision
+website: https://github.com/Amritpal-001/EyeAI
 code: https://github.com/Amritpal-001/EyeAI
 ---
 
-[Github link to project](https://github.com/Amritpal-001/EyeAI)
-
 Prototype Deep leanring based android app for eye disease on edge devices 
-
-<img src="Images/logo_final.png" alt="Logo" width="100" height="70" />
-
-
-## Aim 
-
 Training, deploying deep learning models for ophthalmology diagnosis on android app

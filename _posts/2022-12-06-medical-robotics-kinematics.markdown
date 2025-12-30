@@ -9,11 +9,6 @@ tags:
 ---
 
 Project for CS-6739 Medical robotics course, MSCS Gatech, USA
-
 Team members: Amritpal Singh, Oluwatofunmi M Sodimu
 Group 5 (G) , BMED 6739 Medical robotics 
 Advisor - Prof. Yue Chen
-
-Project type: Application project 
-
-# Demo

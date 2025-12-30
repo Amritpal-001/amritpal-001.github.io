@@ -8,23 +8,10 @@ venue: 'Kaggle'
 tags:
   - Deep Learning
   - Computer Vision
+website: https://www.kaggle.com/competitions/ranzcr-clip-catheter-line-classification/overview
 ---
 
-[Competition webpage](https://www.kaggle.com/competitions/ranzcr-clip-catheter-line-classification/overview)
-
-
-## Task
-Classify the presence and correct placement of tubes on chest x-rays to save lives
-
-## Evaluation metric
-
-Modified version of the Laplace Log Likelihood.
-
-## Aim
-
+Classify the presence and correct placement of tubes on chest x-rays to save lives. Evaluation metric: Modified version of the Laplace Log Likelihood.
 1. Detect Catheter on Chest Xrays into Endotracheal tube, Nasogastric catheter, CVC 
-2. Detect is the catheter in Normal(functionally), Abnormal(Needs to be replaced) or boderline
-
+2. Detect is the catheter in Normal(functionally), Abnormal(Needs to be replaced) or boderline. 
 Classification problem with 14 classes.
-
-## Data provided  -

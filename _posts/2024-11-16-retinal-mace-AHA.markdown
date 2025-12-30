@@ -4,7 +4,7 @@ title: "Explainable AI Better Predicts 3-Year MACE Risk Compared to Clinical and
 date: 2024-11-16 00:00:00 +00:00
 categories: research
 authors: "<strong>Amritpal Singh</strong>, Rohan Dhamdhere, Gourav Modanwal, Sudeshna Sil Kar, Sadeer Al-Kindi, Anant Madabhushi"
-venue: 'AHA, Nov 2024'
+venue: 'American Heart Association (AHA)'
 image: /images/publications/2024_MACE_AHA.jpg"
 website: https://www.ahajournals.org/doi/abs/10.1161/circ.150.suppl_1.4147261
 ---

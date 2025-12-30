@@ -11,12 +11,4 @@ code: https://github.com/Amritpal-001/DermaAI
 ---
 
 CNNs based classification of skin lesions
-
-Github page - https://github.com/Amritpal-001/DermaAI
-
-## Aim
-deploying deep learning models for Derma diagnosis
-
-
-## Goals - 
-- [x] Train models
+Aim: Deploying deep learning models for Derma diagnosis

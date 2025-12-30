@@ -4,11 +4,9 @@ title: "In-Silico Repositioning of Drugs for Neurofibromatosis 2 Vestibular Schw
 date: 2020-07-30 00:00:00 +00:00
 image: /images/publications/drug_repurposing.jpg
 categories: research
-venue: 'Synapse'
+venue: 'MIT Hack 4 Rare Disease Hackathon'
 website: https://doi.org/10.7303/syn25958848
 ---
-
-Team - MedBot
 
 Neurofibromatosis type 2 is an autosomal-dominant multiple neoplasia syndrome. It is highly debilitating with the frequency of one in 25,000 live births and nearly 100% penetrance by 60 years of age (1). NF2 represents a difficult management problem with most patients facing substantial morbidity and reduced life expectancy. The hallmark of NF2 is the appearance of bilateral vestibular schwannomas, benign tumors on both sides of the vestibular nerve. People with NF2 may also develop schwannomas in other parts of the body, or may develop other types of benign brain or spinal tumors (2) .At this time, possible treatments available for Neurofibromatosis 2-associated tumors include surgery, chemotherapy, and radiation therapy (3). Presently available off-label drugs are not fully effective. It has also been observed that monotherapy is not effective with lesser efficacy, higher resistance and toxicity. The complex interlinked pathways in the pathogenesis NF2 suggest multi-drug therapy may provide an ideal therapeutic effect (4). We therefore would like to work on developing a Machine Learning model to identify suitable drug combination that could lead to better efficacy and lesser chance of resistance.
 
