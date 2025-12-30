@@ -1,0 +1,21 @@
+---
+layout: post
+title: "Vitals: Android app to track patient vitals"
+date: 2021-01-01 00:00:00 +00:00
+image: /images/projects/2021-vitals-logo_512_512.png
+categories: projects
+code: https://github.com/Amritpal-001/Vitals
+---
+
+Github page - https://github.com/Amritpal-001/Vitals
+
+
+Demo version of app to track your vitals - Temp, BP, SP02, BP.
+
+Track vitals over time, See graph representations.
+
+[![Get it on Google Play](https://lisk.io/sites/default/files/pictures/2020-01/download_on_the_play_store_badge.svg)](https://play.google.com)
+
+Kindly don't use for medical purposes or patient care. 
+
+If interested in collaboration for this project, email me on - ap4.singh@gmail.com

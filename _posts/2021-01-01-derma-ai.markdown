@@ -1,0 +1,22 @@
+---
+layout: post
+title: "DermaAI - Deep learning based Skin lesions Classification"
+date: 2021-01-01 00:00:00 +00:00
+image: /images/projects/2021-derma-ai-img1.jpg
+categories: projects
+tags:
+  - Deep Learning
+  - Computer Vision
+code: https://github.com/Amritpal-001/DermaAI
+---
+
+CNNs based classification of skin lesions
+
+Github page - https://github.com/Amritpal-001/DermaAI
+
+## Aim
+deploying deep learning models for Derma diagnosis
+
+
+## Goals - 
+- [x] Train models

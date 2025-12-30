@@ -1,0 +1,22 @@
+---
+layout: post
+title: "COVCT: GSOC proposal for android application (CovCT) for analyzing COVID and non-COVID data."
+date: 2021-01-01 00:00:00 +00:00
+image: /images/projects/2021-covct-proposal.jpg
+categories: projects
+tags:
+  - Deep Learning
+  - Computer Vision
+code: https://github.com/Amritpal-001/CovCT
+---
+
+Project proposal for Google GSOC in association with Emory university school of medicine.
+
+Github page - https://github.com/Amritpal-001/CovCT
+
+This repository has been created for the development of an android application (CovCT) for analyzing COVID and non-COVID data. 
+
+Mentors: Monjoy Saha
+
+Brief Demo - 
+![COV_CT](/images/projects/2021-covct-proposal.jpg)
