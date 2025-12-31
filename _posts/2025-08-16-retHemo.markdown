@@ -1,0 +1,13 @@
+---
+layout: post
+title: "AI-informed retinal biomarkers predict 10-year risk of onset of multiple hematological malignancies"
+date: 2025-08-16 00:00:00 +00:00
+categories: research
+authors: "<strong>Amritpal Singh</strong>, Ajay K. Nooka, Gourav Modanwal, Nieraj Jain, Madhav V. Dhodapkar, Sruthi Arepalli, Sagar Lonial, Anant Madabhushi"
+venue: 'European Journal of Cancer'
+website: https://www.ejcancer.com/article/S0959-8049(25)00537-4/fulltext
+image: /images/publications/2025-retHemo.jpg
+---
+
+**Background**: Early detection of hematological malignancies improves long-term survival but remains a critical challenge due to heterogeneity in clinical presentation. Chronic inflammation is a key driver in hematologic cancers and is known to induce compensatory microvascular changes. High-resolution, non-invasive retinal imaging can allow the quantification of microvascular changes for the early detection of hematological malignancies.
+**Methods and Results**: RetHemo demonstrated significant predictive performance for leukemia (c-index = 0.611, HR = 2.45, 95 % CI: 1.27–4.75, p = 0.027), myeloma (c-index = 0.636, HR = 6.69, 95 % CI: 2.06–21.65, p = 0.006). Unsupervised hierarchical clustering based on retinal vasculature features identified distinct high-risk subgroups for leukemia (p = 0.013), myeloma (p < 0.001), and lymphoma (p = 0.034). Serum proteomics analysis revealed significantly elevated levels of inflammatory proteins, including ITGAL and SLAMF7, in high-risk patients. Comparison with clinical variables showed that RetHemo outperformed traditional clinical and hematologic parameters in stratifying at-risk individuals.

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Artificial intelligence-based virtual staining platform for identifying tumor-associated macrophages from hematoxylin and eosin-stained images"
-date: 2025-03-26 00:00:00 +00:00
+date: 2025-05-2 00:00:00 +00:00
 categories: research
 authors: "Arpit Aggarwal, Mayukhmala Jana, <strong>Amritpal Singh</strong>, Tanmoy Dam, Himanshu Maurya, Tilak Pathak, Sandra Orsulic, Kailin Yang, Deborah Chute, Justin A Bishop, Farhoud Faraji, Wade M Thorstad, Shlomo Koyfman, Scott Steward, Qiuying Shi, Vlad Sandulache, Nabil F Saba, James S Lewis Jr, Germán Corredor, Anant Madabhushi"
 venue: 'European Journal of Cancer'
