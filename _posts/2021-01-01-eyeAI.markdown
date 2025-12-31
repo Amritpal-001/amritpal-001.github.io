@@ -2,13 +2,13 @@
 layout: post
 title: "EyeAI - Android app"
 date: 2021-01-01 00:00:00 +00:00
-image: /images/projects/2021-eyeai-Correct_diagnosis001.jpg
 categories: projects
 tags:
   - Deep Learning
   - Computer Vision
 website: https://github.com/Amritpal-001/EyeAI
 code: https://github.com/Amritpal-001/EyeAI
+image: /images/projects/eyeai_square.png
 ---
 
 Prototype Deep leanring based android app for eye disease on edge devices 

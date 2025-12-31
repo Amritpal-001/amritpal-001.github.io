@@ -2,7 +2,7 @@
 layout: post
 title: "RANZCR CLiP - Catheter and Line Position Challenge"
 date: 2021-03-16 00:00:00 +00:00
-image: /images/competitions/2021_ranzcr_catheter_detection_GradCam_cropped.png
+image: /images/competitions/2021_ranzcr_catheter_detection_GradCam_square.png
 categories: projects
 venue: 'Kaggle'
 tags:
