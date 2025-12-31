@@ -33,3 +33,11 @@ Good refernces:
 5. Commit any changes and push everything to the master branch of your GitHub user repository. GitHub Pages will then rebuild and serve your website.
 6. 
 jekyll serve --incremental --livereload
+
+
+
+# improvmeents
+- Replace website by "paper"
+- Add pdfs locally
+- Add education/work experience at bottom
+- Add authors for each paper
