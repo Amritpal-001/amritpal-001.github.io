@@ -19,7 +19,26 @@ Good refernces:
 - https://github.com/leonidk/leonidk.github.io?tab=readme-ov-file
 - https://leonidk.com/
 - https://jonbarron.info/
+- https://wanjiazhao1203.github.io/
+- https://ericwu09.github.io/  ROSIE
+- https://ai.stanford.edu/~wxliang/
+- https://www.cs.cmu.edu/~katef/
 
+
+Nice style
+- https://guestrin.su.domains/
+- https://cs.stanford.edu/~shirwu/
+
+James zhao lab
+- https://swansonkyle.com/
+- https://nityathakkar.github.io/
+- https://rthapa84.github.io/
+- https://viterbi-web.usc.edu/~ruishanl/index
+  
+  
+James zho BMI
+- https://jsilbergds.github.io/
+- https://elanapearl.github.io/
 
 ## Jekyl template home page
 - https://github.com/barryclark/jekyll-now/tree/master

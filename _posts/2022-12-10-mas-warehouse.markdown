@@ -4,6 +4,7 @@ title: "Optimize Task Allocation via Redundancy in Multi-Agent Systems"
 date: 2022-12-10 00:00:00 +00:00
 image: /images/projects/2022-mas_warehouse_demo.gif
 categories: projects
+authors: "<strong>Amritpal Singh</strong>, Richa Kulkarni"
 tags:
   - Reinforcement Learning
   - Robotics

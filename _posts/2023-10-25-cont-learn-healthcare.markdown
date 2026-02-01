@@ -4,7 +4,8 @@ title: "Class-Incremental Continual Learning for General Purpose Healthcare Mode
 date: 2023-10-25 00:00:00 +00:00
 categories: research
 venue: 'NEURIPS'
-website: https://sites.google.com/view/med-neurips2023/home
+authors: "<strong>Amritpal Singh</strong>, Mustafa Burak Gurbuz, Shiva Souhith Gantha, Prahlad Jasti"
+website: https://arxiv.org/abs/2311.04301
 image: /images/publications/2023_contlearning.jpg"
 ---
 

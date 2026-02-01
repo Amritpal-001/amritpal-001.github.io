@@ -3,7 +3,7 @@ layout: post
 title: "Autonomous Soft Tissue Retraction Using Demonstration-Guided Reinforcement Learning"
 date: 2023-09-20 00:00:00 +00:00
 categories: research
-authors: "Amritpal Singh, Wenqi Shi, May D. Wang"
+authors: "<strong>Amritpal Singh</strong>, Wenqi Shi, May D. Wang"
 venue: 'MICCAI conference'
 image: /images/publications/2023_TissueRetract.gif"
 arxiv: https://doi.org/10.48550/arXiv.2309.00837

@@ -5,6 +5,7 @@ date: 2023-10-20 00:00:00 +00:00
 categories: research
 venue: 'IEEE BIBM conference'
 website: https://ieeexplore.ieee.org/abstract/document/10431906
+authors: "<strong>Amritpal Singh</strong>, Wenqi Shi, May D. Wang"
 image: /images/publications/2023_alz_IEEE_bibm.png"
 
 ---

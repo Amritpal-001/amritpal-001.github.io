@@ -3,7 +3,7 @@ layout: post
 title: "Roadmap to Autonomous Surgery - A Framework to Surgical Autonomy"
 date: 2022-05-26 00:00:00 +00:00
 categories: research
-author: "Amritpal Singh"
+authors: "<strong>Amritpal Singh</strong>"
 venue: 'arxiv'
 arxiv: https://doi.org/10.48550/arXiv.2206.10516
 image: /images/publications/2022_atuonomous_surgery.png"
