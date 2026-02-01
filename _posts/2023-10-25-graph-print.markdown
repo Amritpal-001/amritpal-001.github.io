@@ -5,7 +5,7 @@ date: 2023-10-25 00:00:00 +00:00
 categories: research
 venue: 'NEURIPS'
 authors: "<strong>Amritpal Singh</strong>"
-website: https://arxiv.org/abs/2407.10452
+paper: https://arxiv.org/abs/2407.10452
 image: /images/publications/2023_graphprint.jpg"
 
 ---

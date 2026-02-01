@@ -7,7 +7,7 @@ authors: "Arpit Aggarwal, Mayukhmala Jana, <strong>Amritpal Singh</strong>, Tanm
 venue: 'European Journal of Cancer'
 pdf: https://doi.org/10.1016/j.ejca.2025.115390
 
-website: https://doi.org/10.1016/j.ejca.2025.115390
+paper: https://doi.org/10.1016/j.ejca.2025.115390
 image: /images/publications/2025-VISTA-arpit.jpg
 ---
 

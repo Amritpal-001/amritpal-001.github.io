@@ -5,7 +5,7 @@ date: 2023-10-25 00:00:00 +00:00
 categories: research
 venue: 'NEURIPS'
 authors: "<strong>Amritpal Singh</strong>, Mustafa Burak Gurbuz, Shiva Souhith Gantha, Prahlad Jasti"
-website: https://arxiv.org/abs/2311.04301
+paper: https://arxiv.org/abs/2311.04301
 image: /images/publications/2023_contlearning.jpg"
 ---
 

@@ -145,6 +145,9 @@
               {% if post.slides %}
               <a href="{{post.slides}}">slides</a> /
               {% endif %}
+              {% if post.paper %}
+              <a href="{{post.paper}}">paper</a> /
+              {% endif %}
               {% if post.website %}
               <a href="{{post.website}}">website</a> /
               {% endif %}
@@ -199,11 +202,11 @@
               {{ post.date | date: "%Y-%m-%d" }}
 
               <br>
-              {% if post.website %}
-              <a href="{{post.website}}">website</a> /
-              {% endif %}
               {% if post.paper %}
               <a href="{{post.paper}}">paper</a> /
+              {% endif %}
+              {% if post.website %}
+              <a href="{{post.website}}">website</a> /
               {% endif %}
               {% if post.patent %}
               <a href="{{post.patent}}">patent</a> /

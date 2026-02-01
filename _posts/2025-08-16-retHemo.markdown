@@ -5,7 +5,7 @@ date: 2025-08-16 00:00:00 +00:00
 categories: research
 authors: "<strong>Amritpal Singh</strong>, Ajay K. Nooka, Gourav Modanwal, Nieraj Jain, Madhav V. Dhodapkar, Sruthi Arepalli, Sagar Lonial, Anant Madabhushi"
 venue: 'European Journal of Cancer'
-website: https://www.ejcancer.com/article/S0959-8049(25)00537-4/fulltext
+paper: https://www.ejcancer.com/article/S0959-8049(25)00537-4/fulltext
 image: /images/publications/2025-retHemo.jpg
 ---
 

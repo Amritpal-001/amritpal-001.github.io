@@ -5,7 +5,7 @@ date: 2025-03-26 00:00:00 +00:00
 categories: research
 authors: "<strong>Amritpal Singh</strong>, Tilak Pathak, Germán Corredor, Anant Madabhushi"
 venue: 'USCAP (Boston, USA)'
-website: https://laboratoryinvestigation.org/article/S0023-6837(24)03207-0/fulltext
+paper: https://laboratoryinvestigation.org/article/S0023-6837(24)03207-0/fulltext
 image: /images/publications/2025_DLBCL.jpg"
 
 ---

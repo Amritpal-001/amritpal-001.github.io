@@ -5,7 +5,7 @@ date: 2021-12-01 00:00:00 +00:00
 categories: research
 image: /images/publications/2021_deep_learning_covid.png
 venue: 'Nature, Scientific Reports'
-website: https://doi.org/10.1038/s41598-021-02003-w
+paper: https://doi.org/10.1038/s41598-021-02003-w
 authors: "Prashant Sadashiv Gidde, Shyam Sunder Prasad, Ajay Pratap Singh, Nitin Bhatheja, Satyartha Prakash, Prateek Singh, Aakash Saboo, Rohit Takhar, Salil Gupta, Sumeet Saurav, Raghunandanan M. V., <strong>Amritpal Singh</strong>, Viren Sardana, Harsh Mahajan, Arjun Kalyanpur, Atanendu Shekhar Mandal, Vidur Mahajan, Anurag Agrawal, Anjali Agrawal, Vasantha Kumar Venugopal, Sanjay Singh & Debasis Dash"
 ---
 
