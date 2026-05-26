@@ -5,7 +5,7 @@ date: 2022-05-26 00:00:00 +00:00
 categories: research
 authors: "<strong>Amritpal Singh</strong>"
 venue: 'arxiv'
-arxiv: https://doi.org/10.48550/arXiv.2206.10516
+paper: https://doi.org/10.48550/arXiv.2206.10516
 image: /images/publications/2022_atuonomous_surgery.png"
 ---
 

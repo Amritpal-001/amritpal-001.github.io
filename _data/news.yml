@@ -1,0 +1,130 @@
+# News items shown on the home page.
+#
+# Each entry has:
+#   date       — short label shown in brackets, e.g. "Dec'25"
+#   tag        — label shown after the date, e.g. "[Paper]", "[Talk]"
+#   tag_class  — "news-tag" (normal) or "news-imp-tag" (highlighted)
+#   clinical   — main HTML text shown in clinical mode (current site default)
+#   technical  — HTML text shown in technical mode. Leave blank to fall back
+#                to the clinical text (so you can migrate items one at a time).
+
+- date: "Dec'25"
+  tag: "[Paper]"
+  tag_class: news-tag
+  clinical: |-
+    2 abstracts accepted in American Association for Cancer Research (<b>AACR</b>) April 17-22, 2026 | San Diego | U.S.
+  technical: ""
+
+- date: "Dec'25"
+  tag: "[Paper]"
+  tag_class: news-tag
+  clinical: |-
+    3 abstracts accepted in American College of Cardiology (<b>ACC</b>) Annual Meeting March 28-30, 2026 | New Orleans | U.S.
+  technical: ""
+
+- date: "Dec'25"
+  tag: "[Talk]"
+  tag_class: news-tag
+  clinical: |-
+    3 RSNA co-authored abstracts selected for RSNA Annual Meeting, Chicago, 2025.
+  technical: ""
+
+- date: "Nov'25"
+  tag: "[Feature]"
+  tag_class: news-imp-tag
+  clinical: |-
+    Featured on Emory University's Wonderwall for research contributions, Atlanta.
+  technical: ""
+
+- date: "Nov'25"
+  tag: "[Podium presentation]"
+  tag_class: news-imp-tag
+  clinical: |-
+    Presented AI-based MRI work on early non-responders and surgical need in spinal TB at NASS Annual Meeting, U.S.
+  technical: ""
+
+- date: "Nov'25"
+  tag: "[Podium presentation]"
+  tag_class: news-imp-tag
+  clinical: |-
+    Accepted for Podium presentation at <b>USCAP</b>, March 21–26, 2026, San Antonio
+  technical: ""
+
+- date: "Nov'25"
+  tag: "[Paper]"
+  tag_class: news-tag
+  clinical: |-
+    Co-authored journal paper on <em>Exposome</em> on ocular imaging, multi-omics, and AI for environmental health.
+  technical: ""
+
+- date: "Nov'25"
+  tag: "[Paper]"
+  tag_class: news-tag
+  clinical: |-
+    AI-based MRI study on spinal TB published in <em>The Spine Journal</em> and presented at NASS 2025, Denver.
+  technical: ""
+
+- date: "Sep'25"
+  tag: "[News Feature]"
+  tag_class: news-imp-tag
+  clinical: |-
+    Our RetHemo work was featured on the <b>Daily News, Uk</b> <a href="https://www.dailymail.co.uk/health/article-15096135/Routine-eye-tests-detect-blood-cancer-early-leading-doctors-say.html?ns_mchannel=rss&ns_campaign=1490&ito=1490">Link</a>
+  technical: ""
+
+- date: "Sep'25"
+  tag: "[Paper]"
+  tag_class: news-tag
+  clinical: |-
+    First first-author paper in <em>European Journal of Cancer</em> on RetHemo, AI predicting 10-year risk of hematological malignancies.
+  technical: ""
+
+- date: "Aug'25"
+  tag: "[Talk]"
+  tag_class: news-tag
+  clinical: |-
+    Guest lecture at "Introduction to Medical AI" session for AI in Medicine Cohort Series, Maulana Azad Medical College, India.
+  technical: ""
+
+- date: "Mar'25"
+  tag: "[Podium presentation]"
+  tag_class: news-imp-tag
+  clinical: |-
+    USCAP on graph-based AI predicting molecular subtypes in DLBCL from H&E slides.
+  technical: ""
+
+- date: "Dec'24"
+  tag: "[Podium presentation]"
+  tag_class: news-imp-tag
+  clinical: |-
+    Presented at AHA 2024 on AI-derived retinal vessel features for 3-year MACE risk, Chicago.
+  technical: ""
+
+- date: "May'24"
+  tag: "[Milestone]"
+  tag_class: news-imp-tag
+  clinical: |-
+    Graduated with MS in Computer Science from Georgia Tech, specializing in AI, computer vision, and medical device innovation.
+  technical: ""
+
+- date: "Dec'23"
+  tag: "[Talk]"
+  tag_class: news-tag
+  clinical: |-
+    Presented "GraphPrint" at <span style="color: #d02317; font-weight: bold;"><b>NeurIPS 2023</b></span> AI4D3 Workshop, using AlphaFold 3D protein structures for drug target prediction.
+  technical: |-
+    Presented "GraphPrint" at <span style="color: #d02317; font-weight: bold;"><b>NeurIPS 2023</b></span> AI4D3 Workshop, using AlphaFold 3D protein structures for drug target prediction.
+
+- date: "Dec'23"
+  tag: "[Paper]"
+  tag_class: news-tag
+  clinical: |-
+    Presented continual learning in healthcare imaging AI at <span style="color: #d02317; font-weight: bold;"><b>NeurIPS 2023</b></span>, adapting across tasks and hospitals without forgetting.
+  technical: |-
+    Presented continual learning in healthcare imaging AI at <span style="color: #d02317; font-weight: bold;"><b>NeurIPS 2023</b></span>, adapting across tasks and hospitals without forgetting.
+
+- date: "Dec'23"
+  tag: "[Paper]"
+  tag_class: news-tag
+  clinical: |-
+    Presented multi-modal AI research for Alzheimer's staging using MRI, PET, EHR, and genomics at <b>IEEE BIBM 2023</b>.
+  technical: ""

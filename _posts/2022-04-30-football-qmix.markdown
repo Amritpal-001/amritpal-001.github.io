@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Multiagent agent efficient team coordination in Football using QMIX reinforcement learning algorithm"
+title_technical: "Multiagent agent efficient team coordination in Football using QMIX reinforcement learning algorithm"
 date: 2022-04-30 00:00:00 +00:00
 image: /images/projects/2002-football-qmix-pass_but_cant_chase.gif
 categories: projects
@@ -9,7 +9,8 @@ tags:
 code: https://github.com/Amritpal-001/gfootball_qmix
 ---
 
-Project for CS-7641, MS CS Gatech, USA.
-Challenges of Multi-agent reinforcement learning On top of the exploration-exploitation dilemma, Multi-agent RL faces another dilemma called the Predictability exploitation dilemma. Maximizing performance requires collecting rewards. As in Dec-POMDP agents cannot explicitly com-
-municate, coordination requires predictability. At times, this predictability can also require ignoring private information. The dilemma is to choose between the benefit of exploiting
-private observation vs the cost of predictability.
+
+{% capture technical %}Project for CS-7641, MS CS Gatech, USA. Challenges of Multi-agent reinforcement learning On top of the exploration-exploitation dilemma, Multi-agent RL faces another dilemma called the Predictability exploitation dilemma. Maximizing performance requires collecting rewards. As in Dec-POMDP agents cannot explicitly communicate, coordination requires predictability. At times, this predictability can also require ignoring private information. The dilemma is to choose between the benefit of exploiting private observation vs the cost of predictability.
+{% endcapture %}
+<div class="view-clinical">{{ clinical | markdownify }}</div>
+<div class="view-technical">{{ technical | markdownify }}</div>

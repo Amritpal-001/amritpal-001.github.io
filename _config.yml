@@ -40,6 +40,17 @@ disqus:
 google_analytics:
 # excerpt_separator: <!--more-->
 
+# Clinical vs Technical site rendering mode.
+#   default: which version visitors see on a plain URL (clinical | technical).
+#   tokens:  secret short codes for sharing the other version via ?v=<code>.
+#            Rotate these any time to invalidate previously shared links.
+# To flip the site-wide default: edit `default` below, commit, push.
+site_mode:
+  default: technical
+  tokens:
+    clinical: cl2
+    technical: tc2
+
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
 url: "http://amritpal-001.github.io/" # the base hostname & protocol for your site

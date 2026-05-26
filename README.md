@@ -40,6 +40,12 @@ James zho BMI
 - https://jsilbergds.github.io/
 - https://elanapearl.github.io/
 
+
+Modern/"Too much" style
+- https://toshi2k2.github.io/publications/
+
+
+
 ## Jekyl template home page
 - https://github.com/barryclark/jekyll-now/tree/master
 
@@ -60,3 +66,14 @@ jekyll serve --incremental --livereload
 - Add pdfs locally
 - Add education/work experience at bottom
 - Add authors for each paper
+
+
+
+title_technical: "Cox-based retinal vasculature biomarker model for 10-year incident prediction"
+{% capture clinical %}
+
+{% endcapture %}
+{% capture technical %}**Motivation**: Hematological malignancies exhibit chronic-inflammation-driven microvascular remodeling. We hypothesized that retinal fundus imaging — a non-invasive, high-resolution proxy for systemic microvasculature — encodes pre-symptomatic disease signal extractable via deep-learning-derived vasculature features.
+{% endcapture %}
+<div class="view-clinical">{{ clinical | markdownify }}</div>
+<div class="view-technical">{{ technical | markdownify }}</div>
