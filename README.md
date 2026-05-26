@@ -61,7 +61,7 @@ jekyll serve --incremental --livereload
 
 
 
-# improvmeents
+# improvments
 - Replace website by "paper"
 - Add pdfs locally
 - Add education/work experience at bottom
@@ -69,11 +69,94 @@ jekyll serve --incremental --livereload
 
 
 
-title_technical: "Cox-based retinal vasculature biomarker model for 10-year incident prediction"
-{% capture clinical %}
+---
 
-{% endcapture %}
-{% capture technical %}**Motivation**: Hematological malignancies exhibit chronic-inflammation-driven microvascular remodeling. We hypothesized that retinal fundus imaging — a non-invasive, high-resolution proxy for systemic microvasculature — encodes pre-symptomatic disease signal extractable via deep-learning-derived vasculature features.
-{% endcapture %}
+# Clinical vs Technical dual-mode site
+
+The site renders in one of two modes — **clinical** (audience-friendly phrasing) or **technical** (methods/ML/jargon-heavy phrasing). Each post, news item, and bio paragraph can declare a version for one or both modes.
+
+## Switching modes
+
+Three ways to control which mode visitors see:
+
+| URL | Mode |
+|---|---|
+| `/` (or any plain URL) | Uses `site_mode.default` from [_config.yml](_config.yml) |
+| `/?v=cl2` | Forces clinical (overrides default) |
+| `/?v=tc2` | Forces technical (overrides default) |
+
+To flip the **site-wide default**: edit [_config.yml](_config.yml):
+```yaml
+site_mode:
+  default: clinical     # change to technical to flip
+  tokens:
+    clinical: cl2
+    technical: tc2
+```
+Then commit + push — GitHub Pages rebuilds and the default flips. Rotate the tokens any time to invalidate previously shared links.
+
+## Visibility rules
+
+- A **post** appears in clinical mode if it has a `title:` (every post does, so all posts appear by default). It also appears in technical mode if it has `title_technical:` in frontmatter. Use `clinical_hidden: true` to hide a specific post from clinical mode.
+- A **news item** appears in a given mode only if that mode's field is non-empty in [_data/news.yml](_data/news.yml). Items with `technical: ""` are hidden from technical mode.
+- A **post body** uses two `{% capture %}` blocks; whichever matches the active mode is rendered. If a post lacks the active mode's content, the entire post row is hidden — no fallback.
+
+## Authoring a new post (with both versions)
+
+Create `_posts/YYYY-MM-DD-slug.markdown`:
+
+```markdown
+---
+layout: post
+title: "Clinical title here"
+title_technical: "Technical title here"      # omit for clinical-only posts
+date: YYYY-MM-DD 00:00:00 +00:00
+categories: research                          # or 'projects'
+authors: "<strong>Amritpal Singh</strong>, ..."
+venue: 'Journal / Conference'
+paper: https://...                            # rendered as 'Paper' link
+project_page: https://...                     # optional, rendered as 'Project page'
+code: https://github.com/...                  # optional, rendered as 'Code'
+image: /images/publications/your-thumb.jpg
+---
+{% capture clinical %}**Background**: One-paragraph clinical-tone summary. Avoid heavy jargon. Use **bold** lead-ins for sections like Background, Methods and Results.{% endcapture %}
+{% capture technical %}**Motivation**: One-paragraph technical-tone summary. ML/methods/jargon OK. Sections like Motivation, Pipeline, Results work well.{% endcapture %}
 <div class="view-clinical">{{ clinical | markdownify }}</div>
 <div class="view-technical">{{ technical | markdownify }}</div>
+```
+
+Important conventions:
+- **No blank lines** between the capture blocks or the divs (Jekyll's excerpt extractor cuts at the first `\n\n`).
+- Use `| markdownify` on the captured content — do **not** use `markdown="1"` on the div (kramdown nests divs incorrectly otherwise).
+- For clinical-only posts, omit `title_technical:` and the `{% capture technical %}` block. The post will hide in technical mode.
+
+## Adding/editing news
+
+All news items live in [_data/news.yml](_data/news.yml). Add new items at the top:
+
+```yaml
+- date: "Mar'26"
+  tag: "[Paper]"
+  tag_class: news-tag         # or news-imp-tag for the highlighted variant
+  clinical: |-
+    Your clinical-toned text. <b>HTML</b> and <a href="...">links</a> work here.
+  technical: |-
+    Your technical-toned text. Leave as "" to hide from technical mode.
+```
+
+Then rebuild (see below). News items with empty `technical: ""` only appear in clinical mode.
+
+## Rebuilding locally
+
+After editing any post, `_data/news.yml`, `_config.yml`, or a layout:
+ 
+
+## Files involved in the dual-mode system
+
+| File | Role |
+|---|---|
+| [_config.yml](_config.yml) | `site_mode.default` and URL tokens |
+| [_layouts/default.html](_layouts/default.html) | Mode-detection script, CSS visibility rules, post/news loops with `view-*` and `post-has-*` / `item-has-*` classes |
+| [_layouts/post.html](_layouts/post.html) | Inherits default; toggle propagates to detail pages |
+| [_data/news.yml](_data/news.yml) | All news entries with `clinical:` / `technical:` fields |
+| [_posts/](_posts/) | Individual posts; migrated ones use `{% capture %}` blocks + view divs |

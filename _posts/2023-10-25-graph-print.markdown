@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "GraphPrint: Combining Traditional Fingerprint with Graph Neural Networks For Drug Target Prediction"
-title_technical: "Cox-based retinal vasculature biomarker model for 10-year incident prediction"
+title_technical: "GraphPrint: Combining Traditional Fingerprint with Graph Neural Networks For Drug Target Prediction"
 date: 2023-10-25 00:00:00 +00:00
 categories: research
 venue: 'NEURIPS'

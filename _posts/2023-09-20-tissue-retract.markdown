@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Autonomous Soft Tissue Retraction Using Demonstration-Guided Reinforcement Learning"
-title_technical: "Cox-based retinal vasculature biomarker model for 10-year incident prediction"
+title_technical: "Autonomous Soft Tissue Retraction Using Demonstration-Guided Reinforcement Learning m"
 date: 2023-09-20 00:00:00 +00:00
 categories: research
 authors: "<strong>Amritpal Singh</strong>, Wenqi Shi, May D. Wang"
