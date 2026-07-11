@@ -46,7 +46,7 @@ google_analytics:
 #            Rotate these any time to invalidate previously shared links.
 # To flip the site-wide default: edit `default` below, commit, push.
 site_mode:
-  default: technical
+  default: clinical
   tokens:
     clinical: cl2
     technical: tc2
