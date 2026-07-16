@@ -7,7 +7,7 @@ categories: research
 authors: "<strong>Amritpal Singh</strong>, Sena Azamat, Gourav Modanwal, Pushkar Mutha, Pingfu Fu, Neel R. Gandhi, Rohan Dhamdhere, Mendel Lebowitz, Sadeer Al-Kindi, Anurag Aggarwal, Yingda L. Xie, Anant Madabhushi"
 venue: 'eBioMedicine (The Lancet Discovery Science) 2026;130:106385'
 paper: https://www.thelancet.com/journals/ebiom/article/PIIS2352-3964(26)00269-0/fulltext
-image: /images/publications/2026-Cardiomorph.png
+image: /images/publications/2026-Cardiomorph_square.png
 code: https://github.com/Amritpal-001/cardiomorph
 project_page: https://amritpal-001.github.io/cardiomorph_ebiomedicine/
 ---
