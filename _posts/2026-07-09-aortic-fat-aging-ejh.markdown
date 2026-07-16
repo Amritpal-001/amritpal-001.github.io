@@ -1,0 +1,17 @@
+---
+layout: post
+title: "Peri-Aortic Fat to Assess Cardiovascular Aging Using an AI-Driven Radiomic Biomarker"
+title_technical: "Peri-aortic adipose tissue radiomics on routine chest CT as a cardiovascular age-gap biomarker"
+date: 2026-07-09 00:00:00 +00:00
+categories: research
+authors: "Mendel Lebowitz, Gourav Modanwal, <strong>Amritpal Singh</strong>, Rohan Dhamdhere, Saumya Diwan, Taofik Ahmed Suleiman, Hilmi Al-Shakhshir, Michael Gilkey, Scott Shofer, Santosh Kumar Sirasapalli, M Benjamin Shoemaker, Sadeer Al-Kindi, Sanjay Rajagopalan, Anant Madabhushi"
+venue: 'European Heart Journal 2026;ehag498'
+paper: https://doi.org/10.1093/eurheartj/ehag498
+image: /images/publications/2026_aortic_fat_aging_ejh.jpg
+---
+{% capture clinical %}**Background**: Chronological age is central to cardiovascular disease (CVD) risk estimation but poorly reflects interindividual heterogeneity in cardiovascular aging. This study developed a peri-aortic adipose tissue (PAAT) radiomic cardiovascular age (CV-Age) biomarker from routine chest CT and tested whether the PAAT age gap (ΔAge = CV-Age − chronological age) stratifies major adverse cardiovascular events (MACE) and improves risk classification. **Methods**: Four chest CT cohorts with different protocols were used to train (n = 4,451) and externally validate (n = 44,214) a CV-Age model. Associations between ΔAge decile groups (resilient ≤10th; accelerated ≥90th) and incident 5-point MACE (myocardial infarction, stroke, revascularization, heart failure, and death) were assessed using survival models, with clinical utility evaluated by substituting CV-Age for chronological age in risk calculators. **Findings**: The PAAT-derived ΔAge identified patients at accelerated and resilient cardiovascular aging independent of chronological age, with accelerated agers showing significantly elevated 5-point MACE risk and resilient agers showing significantly lower risk, improving risk classification beyond standard clinical models.
+{% endcapture %}
+{% capture technical %}Chronological age is a blunt instrument for cardiovascular risk — two 60-year-olds can have wildly different vascular futures. We asked whether the fat wrapped around the aorta, already sitting in millions of chest CTs taken for unrelated reasons, encodes a better readout of cardiovascular age than the calendar does. We built a radiomic CV-Age model from peri-aortic adipose tissue (PAAT) segmented on chest CT, trained across 4,451 patients and externally validated on 44,214 across four cohorts with heterogeneous acquisition protocols. The target wasn't age itself but the *gap*: ΔAge = CV-Age − chronological age, splitting the population into resilient agers (ΔAge in the bottom decile) and accelerated agers (top decile). Using landmark survival models for 5-point MACE (MI, stroke, revascularization, heart failure, death), accelerated PAAT-agers carried significantly elevated event risk and resilient agers significantly lower risk, holding after adjustment for standard clinical covariates — and substituting CV-Age for chronological age inside existing risk calculators improved classification. The result is a biomarker that piggybacks entirely on imaging already being acquired, turning an incidental fat depot into a personalized aging clock rather than adding a new acquisition, cohort, or protocol to the clinical pipeline.
+{% endcapture %}
+<div class="view-clinical">{{ clinical | markdownify }}</div>
+<div class="view-technical">{{ technical | markdownify }}</div>
