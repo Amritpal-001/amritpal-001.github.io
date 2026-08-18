@@ -8,7 +8,7 @@ venue: 'IEEE BIBM conference'
 paper: https://ieeexplore.ieee.org/abstract/document/10431906
 authors: "<strong>Amritpal Singh</strong>, Wenqi Shi, May D. Wang"
 image: /images/publications/2023_alz_IEEE_bibm.png"
-
+project_page:   https://amritpal-001.github.io/multimodal_Alzheimer_page/
 ---
 
 
@@ -17,3 +17,6 @@ image: /images/publications/2023_alz_IEEE_bibm.png"
 {% capture technical %} What happens when you force MRI scans, PET metabolism maps, EHR timelines, and genomic signals into the same latent space and ask them to agree on whether a brain is aging normally or collapsing toward Alzheimer’s? This work builds a multimodal deep learning framework that treats Alzheimer’s staging as a representation alignment problem across radically different biomedical modalities. Surprisingly, simple multiplicative fusion consistently beat larger concatenative models, suggesting that cross-modal interaction mattered more than parameter count. The study also uncovered a strange age effect: models became highly predictive in earlier disease windows, then progressively failed in older cohorts, hinting at hidden subtypes of neurodegenerative aging. We even transformed structured clinical/genomic variables into image-like spatial embeddings to co-train with 3D neuroimaging pipelines. The result is less of a medical classifier and more of a small-scale experiment in multimodal reasoning over noisy human biology. {% endcapture %}
 <div class="view-clinical">{{ clinical | markdownify }}</div>
 <div class="view-technical">{{ technical | markdownify }}</div>
+
+
+
