@@ -178,6 +178,14 @@
               {% if post.project_page %}
               <a href="{{post.project_page}}">Project page</a> /
               {% endif %}
+              {% if post.project_page contains '/rethemo_page/' %}
+              <style>
+                @keyframes rethemo-news-pulse { 0%, 100% { box-shadow: 0 0 0 0 rgba(215,47,47,.28); } 50% { box-shadow: 0 0 0 4px rgba(215,47,47,0); } }
+                .rethemo-news-badge { display: inline-block; padding: 1px 6px; border-radius: 4px; color: #b42318; background: #fff0ed; font-size: .9em; font-weight: 700; animation: rethemo-news-pulse 2.5s ease-in-out 4; }
+                @media (prefers-reduced-motion: reduce) { .rethemo-news-badge { animation: none; } }
+              </style>
+              <span class="rethemo-news-badge">📰 News</span> <a href="https://www.dailymail.co.uk/health/article-15096135/Routine-eye-tests-detect-blood-cancer-early-leading-doctors-say.html">Daily Mail</a> · <a href="https://www.usmedicine.com/clinical-topics/oncology/ai-informed-retinal-biomarkers-predict-risk-of-onset-of-hematological-malignancies/">U.S. Medicine</a> /
+              {% endif %}
               {% if post.website %}
               <a href="{{post.website}}">website</a> /
               {% endif %}
