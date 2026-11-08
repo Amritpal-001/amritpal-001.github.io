@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="GraphPrint: a graph neural network framework that incorporates AlphaFold-predicted 3D protein structure into drug-target affinity prediction, achieving state-of-the-art results on the KIBA dataset.">
+  <meta property="og:title" content="GraphPrint: Extracting Features from 3D Protein Structure for Drug Target Affinity Prediction"/>
+  <meta property="og:description" content="A graph neural network framework that combines 3D protein structure with traditional fingerprints for drug-target affinity prediction, achieving 0.1378 MSE and 0.8929 CI on KIBA."/>
+  <meta property="og:url" content="https://amritpal-001.github.io/graphprint/"/>
+  <meta property="og:image" content="static/images/social_banner.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+  <meta name="twitter:title" content="GraphPrint: Extracting Features from 3D Protein Structure for Drug Target Affinity Prediction">
+  <meta name="twitter:description" content="Incorporating AlphaFold-predicted 3D protein structure into drug-target affinity prediction via graph neural networks.">
+  <meta name="twitter:image" content="static/images/social_banner.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="keywords" content="drug target affinity, graph neural network, protein 3D structure, AlphaFold, KIBA, drug discovery, GraphPrint">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>GraphPrint: Extracting Features from 3D Protein Structure for Drug Target Affinity Prediction</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-2 publication-title">GraphPrint: Extracting Features from 3D Protein Structure for Drug Target Affinity Prediction</h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">Amritpal Singh</span>
+            </div>
+
+            <div class="is-size-7 affiliations">
+              <span class="author-block">Department of Computer Science, Georgia Institute of Technology, USA</span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block publication-venue">NeurIPS 2023 Workshop on New Frontiers of AI for Drug Discovery and Development (AI4D3 2023)</span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2407.10452" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+
+              <span class="link-block">
+                <a href="graphprint_paper.pdf" target="_blank"
+                class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="fas fa-file-pdf"></i>
+                </span>
+                <span>PDF</span>
+              </a>
+            </span>
+
+              <span class="link-block">
+                <a href="https://github.com/Amritpal-001/graphPrint" target="_blank"
+                class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="fab fa-github"></i>
+                </span>
+                <span>Code</span>
+              </a>
+            </span>
+
+            <span class="link-block">
+              <a href="#BibTeX"
+              class="external-link button is-normal is-rounded is-dark">
+              <span class="icon">
+                <i class="fas fa-quote-right"></i>
+              </span>
+              <span>Cite</span>
+            </a>
+          </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Accurate drug target affinity prediction can improve drug candidate selection, accelerate the drug discovery process, and reduce drug production costs. Previous work focused on traditional fingerprints or used features extracted based on the amino acid sequence in the protein, ignoring its 3D structure which affects its binding affinity. In this work, we propose GraphPrint: a framework for incorporating 3D protein structure features for drug target affinity prediction. We generate graph representations for protein 3D structures using amino acid residue location coordinates and combine them with drug graph representation and traditional features to jointly learn drug target affinity. Our model achieves a mean square error of 0.1378 and a concordance index of 0.8929 on the KIBA dataset and improves over using traditional protein features alone. Our ablation study shows that the 3D protein structure-based features provide information complementary to traditional features.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Overview</h2>
+    <div class="has-text-centered">
+      <img src="static/images/fig2.png" alt="GraphPrint pipeline overview" style="max-width: 100%; height: auto;">
+    </div>
+    <p class="has-text-centered is-size-7" style="color:#666; margin-top: 0.75rem;">
+      Fig. 1 &mdash; GraphPrint pipeline: AlphaFold structure &rarr; residue graph, fingerprint extraction, and the four-branch (P<sub>G</sub>, P<sub>F</sub>, D<sub>G</sub>, D<sub>F</sub>) architecture, followed by concatenation into a classifier.
+    </p>
+  </div>
+</section>
+
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Why this matters</h2>
+    <div class="content has-text-justified">
+      <p>
+        Predicting drug&ndash;target affinity (DTA) is a core step in drug discovery &mdash; it lets researchers rank candidate compounds before committing to expensive wet-lab validation. Almost all deep learning approaches to DTA, from DeepDTA to GraphDTA, represent a protein purely as its 1D amino acid sequence, either via convolutional embeddings or, more recently, a sequence-derived graph. This throws away information: proteins fold into secondary, tertiary, and sometimes quaternary 3D structures, and it is this 3D shape &mdash; not the raw sequence &mdash; that determines a protein's binding and docking sites.
+      </p>
+      <p>
+        With AlphaFold making accurate 3D structure prediction available at scale, <strong>GraphPrint</strong> asks a simple question: does giving a DTA model direct access to a protein's 3D structure, on top of its sequence-derived fingerprints, improve affinity prediction? We answer this by building a residue-level 3D graph from AlphaFold-predicted structures &mdash; each amino acid becomes a node located at its residue's center of mass &mdash; and fusing it with traditional fingerprints and a drug's own 3D-aware molecular graph inside a multi-branch graph neural network.
+      </p>
+    </div>
+    <div class="has-text-centered" style="margin-top: 1rem;">
+      <img src="static/images/fig1.png" alt="Levels of protein structure" style="max-width: 85%; height: auto;">
+    </div>
+    <p class="has-text-centered is-size-7" style="color:#666; margin-top: 0.5rem;">
+      Protein structure at several levels: primary (amino acid sequence), secondary (helix/sheet), and tertiary/quaternary folding into the full 3D structure that GraphPrint's protein graph branch captures.
+    </p>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Method</h2>
+    <div class="content has-text-justified">
+      <p>
+        GraphPrint uses a four-branch multi-head architecture that learns protein and drug embeddings from both structure and fingerprint representations, then fuses them for a final regression head:
+      </p>
+      <ul>
+        <li><strong>Branch P<sub>G</sub> (protein graph)</strong> &mdash; AlphaFold generates the 3D structure for each protein target; each amino acid residue becomes a graph node positioned at its center of mass, with node features for amino acid encoding, molecular weight, polarity, solubility, and pKa. Five graph isomorphism convolution (GINConv) layers followed by global average pooling extract a graph-level protein embedding.</li>
+        <li><strong>Branch P<sub>F</sub> (protein fingerprint)</strong> &mdash; sequence-only descriptors (AAC, conjoint triad, and quasi-sequence-order fingerprints, computed via <em>iFeature</em>) are concatenated and passed through 1D convolution and linear layers.</li>
+        <li><strong>Branch D<sub>G</sub> (drug graph)</strong> &mdash; SMILES strings are converted to molecular graphs with RDKit (atoms as nodes, bonds as edges) and processed with the same 5-layer GINConv stack as P<sub>G</sub>.</li>
+        <li><strong>Branch D<sub>F</sub> (drug fingerprint)</strong> &mdash; Morgan (1024-bit) and Daylight (2048-bit) fingerprints, computed via the Therapeutics Data Commons library, are encoded with 1D convolution and a linear layer.</li>
+      </ul>
+      <p>
+        The four branch embeddings are concatenated and passed through a classifier MLP to predict the final KIBA affinity score. Bottleneck layers throughout the architecture encourage efficient, compact embeddings and reduce parameter count.
+      </p>
+    </div>
+    <div class="has-text-centered">
+      <img src="static/images/fig3.png" alt="Protein graph construction" style="max-width: 90%; height: auto;">
+    </div>
+    <p class="has-text-centered is-size-7" style="color:#666; margin-top: 0.5rem;">
+      Protein graph representation: each residue's center of mass becomes a node, with amino acid property features attached.
+    </p>
+  </div>
+</section>
+
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Results on KIBA</h2>
+    <div class="content has-text-justified">
+      <p>
+        GraphPrint was evaluated on a curated version of the KIBA dataset (2,111 drugs, 229 proteins, filtered to pairs with &ge;10 interactions), with 3D protein structures generated via AlphaFold. The full four-branch model achieved competitive performance against prior state-of-the-art DTA architectures.
+      </p>
+    </div>
+
+    <div class="columns is-centered" style="margin: 1rem 0 2rem;">
+      <div class="column is-3">
+        <div class="box has-text-centered">
+          <p class="heading">Mean Squared Error</p>
+          <p class="title is-3">0.1378</p>
+        </div>
+      </div>
+      <div class="column is-3">
+        <div class="box has-text-centered">
+          <p class="heading">Concordance Index</p>
+          <p class="title is-3">0.8929</p>
+        </div>
+      </div>
+      <div class="column is-3">
+        <div class="box has-text-centered">
+          <p class="heading">Spearman corr.</p>
+          <p class="title is-3">0.8852</p>
+        </div>
+      </div>
+      <div class="column is-3">
+        <div class="box has-text-centered">
+          <p class="heading">Pearson corr.</p>
+          <p class="title is-3">0.8920</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="table-container">
+      <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth" style="background:transparent;">
+        <caption class="is-size-7" style="text-align:left; caption-side:top; color:#666; margin-bottom:0.5rem;">
+          Table 1 &mdash; Comparison with previous state-of-the-art models on the KIBA test set.
+        </caption>
+        <thead>
+          <tr><th>Model</th><th>RMSE</th><th>MSE</th><th>CI</th><th>Spearman</th><th>Pearson</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>DeepDTA</td><td>&mdash;</td><td>0.194</td><td>0.863</td><td>&mdash;</td><td>&mdash;</td></tr>
+          <tr><td>GraphDTA</td><td>&mdash;</td><td>0.139</td><td>0.891</td><td>&mdash;</td><td>&mdash;</td></tr>
+          <tr><td>iEdgeDTA</td><td>&mdash;</td><td>0.139</td><td>0.890</td><td>&mdash;</td><td>&mdash;</td></tr>
+          <tr><td>BiComp-DTA</td><td>&mdash;</td><td>0.167</td><td>0.891</td><td>&mdash;</td><td>&mdash;</td></tr>
+          <tr><td><strong>GraphPrint (ours)</strong></td><td><strong>0.3713</strong></td><td><strong>0.1378</strong></td><td><strong>0.8929</strong></td><td><strong>0.8852</strong></td><td><strong>0.8920</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="content has-text-justified" style="margin-top:1rem;">
+      An ablation study removing one branch at a time confirms that the 3D protein-structure branch (P<sub>G</sub>) is not redundant: removing it drops CI from 0.8929 to 0.8911 and increases MSE, supporting the hypothesis that 3D structure carries information complementary to traditional hand-crafted fingerprints. Removing the fingerprint branches (D<sub>F</sub>, P<sub>F</sub>) causes a larger performance drop, indicating fingerprints and structure work best together rather than as substitutes for one another.
+    </p>
+
+    <div class="has-text-centered" style="margin-top: 1.5rem;">
+      <img src="static/images/fig4.png" alt="MSE contribution by drug and protein ID" style="max-width: 100%; height: auto;">
+    </div>
+    <p class="has-text-centered is-size-7" style="color:#666; margin-top: 0.5rem;">
+      A small number of drugs and proteins are responsible for the majority of MSE error &mdash; the loss curve rises sharply only for the tail of hardest cases.
+    </p>
+
+    <div class="has-text-centered" style="margin-top: 1.5rem;">
+      <img src="static/images/fig5.png" alt="Error contribution vs drug atom, aromatic atom, and bond counts" style="max-width: 100%; height: auto;">
+    </div>
+    <p class="has-text-centered is-size-7" style="color:#666; margin-top: 0.5rem;">
+      MSE contribution scales roughly linearly with a drug's atom count, aromatic atom count, and bond count &mdash; larger, more complex molecules are harder to predict accurately.
+    </p>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Limitations &amp; future work</h2>
+    <div class="content has-text-justified">
+      <p>
+        Generating 3D structures with AlphaFold is computationally expensive, so this study evaluates GraphPrint only on KIBA; broader evaluation across multiple DTA datasets is a natural next step. The work focuses on integrating 3D structural information rather than optimizing the graph architecture itself &mdash; more recent attention-based graph architectures could offer further gains. Promising future directions include an explainability layer that highlights which amino acid regions drive drug interactions, and a systematic study of which protein structural motifs are associated with the largest prediction errors.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@misc{singh2024graphprint,
+  title         = {{GraphPrint: Extracting Features from 3D Protein Structure for
+                   Drug Target Affinity Prediction}},
+  author        = {Singh, Amritpal},
+  year          = {2024},
+  eprint        = {2407.10452},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.LG},
+  note          = {NeurIPS 2023 Workshop on New Frontiers of AI for Drug Discovery
+                   and Development (AI4D3 2023)}
+}</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered is-size-7" style="color:#777;">
+      <p>
+        Accepted at the NeurIPS 2023 Workshop on New Frontiers of AI for Drug Discovery and Development (AI4D3 2023), New Orleans, LA, USA.
+      </p>
+      <p>
+        This project page is built on the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">academic project page template</a>.
+      </p>
+    </div>
+  </div>
+</footer>
+
+  </body>
+  </html>

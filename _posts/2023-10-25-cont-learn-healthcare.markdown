@@ -8,7 +8,7 @@ venue: 'NEURIPS'
 authors: "<strong>Amritpal Singh</strong>, Mustafa Burak Gurbuz, Shiva Souhith Gantha, Prahlad Jasti"
 paper: https://arxiv.org/abs/2311.04301
 image: /images/publications/2023_contlearning.jpg"
-project_page: https://amritpal-001.github.io/med_continual_learn_page/
+project_page: https://amritpal-001.github.io/project_pages/med_continual_learn_page/
 
 ---
 

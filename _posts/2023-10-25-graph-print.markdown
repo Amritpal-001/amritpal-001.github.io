@@ -8,7 +8,7 @@ venue: 'NEURIPS'
 authors: "<strong>Amritpal Singh</strong>"
 paper: https://arxiv.org/abs/2407.10452
 image: /images/publications/2023_graphprint.jpg"
-project_page: https://amritpal-001.github.io/graphprint_page/
+project_page: https://amritpal-001.github.io/project_pages/graphprint_page/
 code: https://github.com/Amritpal-001/graphPrint
 ---
 
