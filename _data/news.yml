@@ -8,6 +8,70 @@
 #   technical  — HTML text shown in technical mode. Leave blank to fall back
 #                to the clinical text (so you can migrate items one at a time).
 
+- date: "2026"
+  tag: "[Award]"
+  tag_class: news-imp-tag
+  clinical: |-
+    Our PHORA team placed third among 144 teams in the MICCAI 2026 AMPLIFAI Challenge and presented our work on liver lesion classification in Strasbourg. <a href="https://papers.miccai.org/miccai-2026-sat/AMPLIFAI_007.html">Paper</a>
+  technical: |-
+    Our PHORA team placed third among 144 teams in the MICCAI 2026 AMPLIFAI Challenge and presented our work on liver lesion classification in Strasbourg. <a href="https://papers.miccai.org/miccai-2026-sat/AMPLIFAI_007.html">Paper</a>
+
+- date: "2026"
+  tag: "[Award]"
+  tag_class: news-imp-tag
+  clinical: |-
+    Our MEDA team won first place and a Meritorious Winner Award in the vision-language track of the CVPR 2026 Foundation Models for General CT Image Diagnosis Challenge, with an oral presentation.
+  technical: |-
+    Our MEDA team won first place and a Meritorious Winner Award in the vision-language track of the CVPR 2026 Foundation Models for General CT Image Diagnosis Challenge, with an oral presentation.
+
+- date: "2026"
+  tag: "[Paper]"
+  tag_class: news-imp-tag
+  clinical: |-
+    Our first-author CardioMorph Atlas study on pulmonary tuberculosis and cardiac morphology from chest X-rays was published in <em>eBioMedicine</em>. <a href="https://amritpal-001.github.io/cardiomorph_ebiomedicine/">Project page</a>
+  technical: |-
+    Our first-author CardioMorph Atlas study on pulmonary tuberculosis and cardiac morphology from chest X-rays was published in <em>eBioMedicine</em>. <a href="https://amritpal-001.github.io/cardiomorph_ebiomedicine/">Project page</a>
+
+- date: "Jul’26"
+  tag: "[Paper]"
+  tag_class: news-imp-tag
+  clinical: |-
+    Our study on peri-aortic fat radiomics for assessing cardiovascular aging and risk from CT was published in the <em>European Heart Journal</em>. <a href="https://doi.org/10.1093/eurheartj/ehag498">Paper</a>
+  technical: |-
+    Our study on peri-aortic fat radiomics for assessing cardiovascular aging and risk from CT was published in the <em>European Heart Journal</em>. <a href="https://doi.org/10.1093/eurheartj/ehag498">Paper</a>
+
+- date: "Jun’26"
+  tag: "[Milestone]"
+  tag_class: news-imp-tag
+  clinical: |-
+    Joined Johns Hopkins University as a Visiting Research Scholar, working on medical world models, AI agents and vision-language models for medical imaging.
+  technical: |-
+    Joined Johns Hopkins University as a Visiting Research Scholar, working on medical world models, AI agents and vision-language models for medical imaging.
+
+- date: "May–Jun’26"
+  tag: "[News Feature]"
+  tag_class: news-imp-tag
+  clinical: |-
+    Our AI-based pathology work on immunotherapy-treated triple-negative breast cancer was featured among Winship’s contributions to ASCO 2026. <a href="https://winshipcancer.emory.edu/newsroom/articles/2026/winship-investigators-bring-new-clinical-and-scientific-insights-to-asco.php">Feature</a>
+  technical: |-
+    Our AI-based pathology work on immunotherapy-treated triple-negative breast cancer was featured among Winship’s contributions to ASCO 2026. <a href="https://winshipcancer.emory.edu/newsroom/articles/2026/winship-investigators-bring-new-clinical-and-scientific-insights-to-asco.php">Feature</a>
+
+- date: "2026"
+  tag: "[Award]"
+  tag_class: news-imp-tag
+  clinical: |-
+    Received the Shankar Fellowship, providing multiyear support for my PhD research.
+  technical: |-
+    Received the Shankar Fellowship, providing multiyear support for my PhD research.
+
+- date: "Apr’26"
+  tag: "[Conference]"
+  tag_class: news-imp-tag
+  clinical: |-
+    Contributed to AACR 2026 work on AI-derived spatial-transcriptomic signatures in melanoma and plasma-immune differences in multiple myeloma. <a href="https://doi.org/10.1158/1538-7445.AM2026-82">Melanoma abstract</a>
+  technical: |-
+    Contributed to AACR 2026 work on AI-derived spatial-transcriptomic signatures in melanoma and plasma-immune differences in multiple myeloma. <a href="https://doi.org/10.1158/1538-7445.AM2026-82">Melanoma abstract</a>
+
 - date: "Dec'25"
   tag: "[Paper]"
   tag_class: news-tag
