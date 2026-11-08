@@ -12,33 +12,33 @@
   tag: "[Award]"
   tag_class: news-imp-tag
   clinical: |-
-    <a href="https://papers.miccai.org/miccai-2026-sat/AMPLIFAI_007.html">PHORA</a> won <strong>3rd of 144 teams</strong> at MICCAI 2026 AMPLIFAI.
+    <a href="https://papers.miccai.org/miccai-2026-sat/AMPLIFAI_007.html">PHORA</a>: <strong>3rd of 144</strong> at MICCAI AMPLIFAI (liver lesion CT classification).
   technical: |-
-    <a href="https://papers.miccai.org/miccai-2026-sat/AMPLIFAI_007.html">PHORA</a> won <strong>3rd of 144 teams</strong> at MICCAI 2026 AMPLIFAI.
+    <a href="https://papers.miccai.org/miccai-2026-sat/AMPLIFAI_007.html">PHORA</a>: <strong>3rd of 144</strong> at MICCAI AMPLIFAI (liver lesion CT classification).
 
 - date: "2026"
   tag: "[Award]"
   tag_class: news-imp-tag
   clinical: |-
-    MEDA won <strong>1st place</strong> in the CVPR 2026 CT diagnosis challenge (vision-language track).
+    MEDA: <strong>1st place</strong> at CVPR CT diagnosis challenge (multi-organ CT AI).
   technical: |-
-    MEDA won <strong>1st place</strong> in the CVPR 2026 CT diagnosis challenge (vision-language track).
+    MEDA: <strong>1st place</strong> at CVPR CT diagnosis challenge (multi-organ CT AI).
 
 - date: "2026"
   tag: "[Paper]"
   tag_class: news-imp-tag
   clinical: |-
-    <a href="https://www.thelancet.com/journals/ebiom/article/PIIS2352-3964(26)00269-0/fulltext">CardioMorph Atlas</a> on TB and cardiac morphology was published in <em>eBioMedicine</em>.
+    <a href="https://www.thelancet.com/journals/ebiom/article/PIIS2352-3964(26)00269-0/fulltext">CardioMorph Atlas</a> on TB and heart morphology in <em>eBioMedicine</em> (2025 IF: 11.2).
   technical: |-
-    <a href="https://www.thelancet.com/journals/ebiom/article/PIIS2352-3964(26)00269-0/fulltext">CardioMorph Atlas</a> on TB and cardiac morphology was published in <em>eBioMedicine</em>.
+    <a href="https://www.thelancet.com/journals/ebiom/article/PIIS2352-3964(26)00269-0/fulltext">CardioMorph Atlas</a> on TB and heart morphology in <em>eBioMedicine</em> (2025 IF: 11.2).
 
 - date: "Jul’26"
   tag: "[Paper]"
   tag_class: news-imp-tag
   clinical: |-
-    Our <a href="https://doi.org/10.1093/eurheartj/ehag498">peri-aortic fat radiomics study</a> was published in the <em>European Heart Journal</em>.
+    Our <a href="https://doi.org/10.1093/eurheartj/ehag498">peri-aortic fat study</a> in the <em>European Heart Journal</em> (2025 IF: 43.5).
   technical: |-
-    Our <a href="https://doi.org/10.1093/eurheartj/ehag498">peri-aortic fat radiomics study</a> was published in the <em>European Heart Journal</em>.
+    Our <a href="https://doi.org/10.1093/eurheartj/ehag498">peri-aortic fat study</a> in the <em>European Heart Journal</em> (2025 IF: 43.5).
 
 - date: "Jun’26"
   tag: "[Milestone]"
