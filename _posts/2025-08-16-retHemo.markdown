@@ -8,7 +8,7 @@ authors: "<strong>Amritpal Singh</strong>, Ajay K. Nooka, Gourav Modanwal, Niera
 venue: 'European Journal of Cancer'
 paper: https://www.ejcancer.com/article/S0959-8049(25)00537-4/fulltext
 image: /images/publications/2025-retHemo.jpg
-project_page: https://amritpal-001.github.io/project_pages/rethemo_page/
+project_page: https://amritpal-001.github.io/rethemo_page/
 
 
 ---

@@ -8,7 +8,7 @@ venue: 'IEEE BIBM conference'
 paper: https://ieeexplore.ieee.org/abstract/document/10431906
 authors: "<strong>Amritpal Singh</strong>, Wenqi Shi, May D. Wang"
 image: /images/publications/2023_alz_IEEE_bibm.png"
-project_page:   https://amritpal-001.github.io/project_pages/multimodal_Alzheimer_page/
+project_page:   https://amritpal-001.github.io/multimodal_Alzheimer_page/
 ---
 
 
