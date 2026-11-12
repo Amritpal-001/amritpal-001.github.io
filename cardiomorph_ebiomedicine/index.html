@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZQKWE8V6TC"></script>
@@ -29,8 +29,6 @@
 
   <title>CardioMorph Atlas: Pulmonary Tuberculosis and Cardiac Morphology from Chest X-Rays</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-  rel="stylesheet">
 
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
@@ -39,6 +37,11 @@
   <link rel="stylesheet"
   href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
+  <link rel="stylesheet" href="static/interactive/rounded-viewer.css">
+  <script defer src="static/interactive/geometry.js"></script>
+  <script defer src="static/interactive/sample-geometry.js"></script>
+  <script defer src="static/interactive/sample/sample-data.js"></script>
+  <script defer src="static/interactive/rounded-viewer.js"></script>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="static/js/fontawesome.all.min.js"></script>
@@ -46,7 +49,7 @@
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
 </head>
-<body>
+<body class="cm-project">
 
 
   <section class="hero">
@@ -70,6 +73,7 @@
               <span class="author-block">and Anant Madabhushi<sup>a,b,i,&#42;</sup></span>
             </div>
 
+            <details class="cm-affiliations"><summary>Affiliations</summary>
             <div class="is-size-7 affiliations">
               <span class="author-block"><sup>a</sup>Emory University School of Medicine, Atlanta, USA &nbsp;</span>
               <span class="author-block"><sup>b</sup>Department of Computer Science, Emory University, Atlanta, USA &nbsp;</span>
@@ -83,6 +87,7 @@
               <br>
               <span class="eql-cntrb"><sup>&#42;</sup>Corresponding author</span>
             </div>
+            </details>
 
             <div class="is-size-5 publication-authors">
               <span class="author-block publication-venue">eBioMedicine (The Lancet Discovery Science) 2026;130:106385</span>
@@ -137,6 +142,84 @@
   </div>
 </section>
 
+
+<section class="cm-explorer" id="explore" aria-labelledby="cm-title">
+  <div class="cm-heading">
+    <div><p class="cm-eyebrow">Interactive atlas</p><h2 id="cm-title">Explore the cardiac shape.</h2></div>
+    <p>One X-ray. Four chambers. A different perspective.</p>
+  </div>
+  <div class="cm-app">
+    <div class="cm-toolbar">
+      <div class="cm-file"><span class="cm-file-icon" aria-hidden="true">▧</span><span>Sample 01 <small>512 × 512</small></span></div>
+      <div class="cm-toolbar-actions">
+        <button class="cm-tool-button" id="cm-reset" title="Reset viewer"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 8a7 7 0 1 1 1 7M3 3v5h5"/></svg>Reset</button>
+        <button class="cm-tool-button" id="cm-export" title="Download feature measurements"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2v11m-4-4 4 4 4-4M3 13v4h14v-4"/></svg>Export</button>
+        <details class="cm-adjust" id="cm-adjust">
+          <summary><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M2 5h16M2 15h16M6 2v6m8 4v6"/></svg>Adjust</summary>
+          <div class="cm-adjust-panel">
+            <h3>Display settings</h3>
+            <label class="cm-range" for="cm-opacity"><span>Mask opacity <output id="cm-opacity-value">35%</output></span><input id="cm-opacity" type="range" min="0" max="80" value="35"></label>
+            <label class="cm-range" for="cm-fullness"><span>3D fullness <output id="cm-fullness-value">80%</output></span><input id="cm-fullness" type="range" min="10" max="100" value="80"></label>
+            <label class="cm-range" for="cm-zoom"><span>Zoom <output id="cm-zoom-value">115%</output></span><input id="cm-zoom" type="range" min="65" max="175" value="115"></label>
+            <div class="cm-adjust-checks">
+              <label class="cm-check"><input id="cm-heart-outline" type="checkbox">Heart outline</label>
+              <label class="cm-check"><input id="cm-xray-plane" type="checkbox">X-ray plane in 3D</label>
+              <label class="cm-check"><input id="cm-wireframe" type="checkbox">Mesh edges</label>
+              <label class="cm-check"><input id="cm-graph" type="checkbox">Landmark graph</label>
+            </div>
+          </div>
+        </details>
+      </div>
+    </div>
+    <div class="cm-app-body">
+      <div class="cm-workspace">
+        <div class="cm-chambers" id="cm-chambers" aria-label="Visible chambers"><span>Chambers</span></div>
+        <div class="cm-views">
+          <div class="cm-view">
+            <div class="cm-pane-header"><span>Chest X-ray <small>2D</small></span><button id="cm-full-image" class="cm-mini-button" aria-pressed="false">Full X-ray</button></div>
+            <div class="cm-stage">
+              <svg id="cm-xray" viewBox="150 220 300 265" role="group" aria-label="Chest X-ray with saved chamber segmentations and selectable landmarks">
+                <defs id="cm-mask-filters"></defs>
+                <image href="static/interactive/sample/sample-xray.png" width="512" height="512"/>
+                <g id="cm-mask-layers"></g><g id="cm-outline-layer"></g><g id="cm-feature-layer"></g><g id="cm-point-layer"></g>
+              </svg>
+            </div>
+          </div>
+          <div class="cm-view">
+            <div class="cm-pane-header"><span>Chamber model <small>3D illustration</small></span><button id="cm-solo" class="cm-solo-button" aria-pressed="false">Solo</button></div>
+            <div class="cm-stage cm-three-stage">
+              <canvas id="cm-canvas" tabindex="0" aria-label="Rounded chamber illustration. Drag or use arrow keys to rotate. Scroll or use plus and minus to zoom. Click a chamber to select it.">This interactive view requires Canvas support.</canvas>
+              <span class="cm-stage-hint">Drag to rotate · Scroll to zoom</span>
+              <div class="cm-camera" aria-label="Camera angle"><button data-cm-camera="front" aria-pressed="false">Front</button><button data-cm-camera="oblique" aria-pressed="true">Oblique</button><button data-cm-camera="side" aria-pressed="false">Side</button></div>
+            </div>
+          </div>
+        </div>
+        <div class="cm-overlay-bar">
+          <div class="cm-overlay-checks">
+            <label class="cm-check"><input id="cm-masks" type="checkbox" checked>Masks</label>
+            <label class="cm-check"><input id="cm-points" type="checkbox" checked>Points</label>
+            <label class="cm-check"><input id="cm-labels" type="checkbox">Labels</label>
+            <label class="cm-check"><input id="cm-feature" type="checkbox" checked>Feature</label>
+          </div>
+          <span id="cm-readout" class="cm-readout" role="status">Select a chamber or point.</span>
+        </div>
+      </div>
+      <aside class="cm-inspector" aria-label="Feature measurements">
+        <h3>Features</h3>
+        <div class="cm-feature-list" id="cm-features"></div>
+        <div class="cm-metrics" aria-live="polite">
+          <div class="cm-metric"><span>Area</span><strong id="cm-area">4,062.0</strong><small>px²</small></div>
+          <div class="cm-metric"><span>Perimeter</span><strong id="cm-perimeter">400.10</strong><small>px</small></div>
+        </div>
+        <div class="cm-landmarks"><span>Landmarks</span><div id="cm-landmarks" class="cm-point-list"></div><div id="cm-coordinate" class="cm-coordinate">Select a point for coordinates.</div></div>
+      </aside>
+    </div>
+  </div>
+  <div class="cm-view-note">
+    <span>Saved segmentations. 3D depth is illustrative; measurements are 2D.</span>
+    <details class="cm-methods"><summary>About this view</summary><p>Sample h0001 uses saved heart-chamber predictions and the original CardioMorph landmark definitions. Chamber fullness and front/back placement are visualization choices. <a href="static/interactive/sample/sample-data.json" target="_blank" rel="noopener">Sample data</a> · <a href="static/interactive/sample/sample-masks.npz" download>Masks</a></p></details>
+  </div>
+</section>
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
