@@ -1,57 +1,35 @@
-# Local interactive prototype
+﻿# CardioMorph rounded-chamber explorer
 
-The single-sample walkthrough is `../../sample.html`, with **Connected surface** and **Rounded chambers** tabs. It uses one copied X-ray and its matching saved model predictions, reproduces the archived landmark and polygon logic, and builds illustrative depth displays from those contours. It opens directly from disk. `sample.html#rounded` selects the new rounded view directly. The older explorer remains at `../../interactive.html`.
+The only active explorer is embedded in `../../index.html#explore`, beneath the publication header. The previous `sample.html` and `interactive.html` URLs redirect there. The earlier experimental interfaces are preserved in GitHub checkpoint commit `3054972` on branch `interaative`.
 
-Open `../../interactive.html` directly in a browser. No installation, build, server, external libraries, or network requests are required for the explorer. The following fragment links select a demonstration: `#atlas`, `#morphometry`, `#heart3d`, `#figures`, and `#overlay`.
+The site is buildless HTML/CSS/JavaScript. Open index.html directly or serve the project folder with any static HTTP server. No inference, uploads, external runtime dependencies, or backend are required by the explorer.
 
-The project page links to this separate explorer. The prototype is developed on the local `interaative` branch; no deployment is required.
+## Interface
 
-## Implemented
+The X-ray and rounded chamber illustration share chamber visibility, landmarks and feature selection. The inspector reports the selected polygon's 2D area and closed perimeter. The Adjust menu contains opacity, fullness, zoom, outline, source-plane, mesh and graph controls. CSV export contains the five original feature measurements.
 
-- Atlas explorer: six comparison columns from the existing published Figure5.svg, independent map/vector-panel visibility, and panel zoom. The maps and arrows are raster artwork, shown in separate source panels; toggling the arrows hides the vector panel. This is not an independently composited raw vector field.
-- Morphometry: generated reference/expanded contours, four selectable schematic regions plus the whole contour, geometric area/boundary length comparisons, lateral expansion, reset, and CSV export. Example numbers are calculated, not patient measurements. The separate p-value readout reproduces the existing project table for Shenzhen/TBX11K and does not change with the generated contours.
-- Genuine 3D surface geometry: four parametric chamber meshes and three capped vessel tubes, rendered using Canvas with perspective projection, depth sorting and lighting. Drag, keyboard and preset rotation; zoom; click-to-select; visibility toggles; isolation; separation; mesh edges; optional auto-rotation; and reset are implemented.
-- Surface area and enclosed volume are calculated from the selected 3D mesh. Values use arbitrary units and are not clinical measurements. Structures overlap in the schematic, so summing chamber volumes would not yield a valid whole-heart volume.
-- Figure navigation using original `Figure1.svg`, `Figure3.svg`, `Figure5.svg`, and `Figure6.svg`.
-- Guided zoom views, 100–400% zoom, pointer panning, keyboard panning, fit/reset, and original-artwork links.
-- An X-ray viewer with independent cardiac/lung/landmark toggles, opacity, original-image wipe, contrast, region explanations, and reset.
-- Keyboard-accessible tabs and controls, responsive layouts, and reduced-motion support.
+The UI uses system typography, neutral surfaces and blue accents. Chamber display colours are coral (LA), blue (RA), violet (LV) and amber (RV). SVG filters recolour the existing mask PNGs for display; the saved masks and original segmentation data are unchanged.
 
-## Asset provenance and limits
+## Source sample and measurements
 
-`reference-xray.png` is the embedded PNG with ID `img5` in the existing `figures/Figure3.svg` (279 × 308 pixels). It is copied without altering its image data. No diagnosis or cohort membership is assigned to this example.
+`sample/sample-xray.png` is an exact copy of the saved local h0001 X-ray. The matching source segmentation has shape (159, 512, 512). Selected largest-component masks are exported as PNGs and sample-masks.npz. The source hash and method hashes are recorded in sample-data.json.
 
-All overlay paths and landmark points are manually drawn interface illustrations. They are explicitly labelled on the page. They are not patient segmentations, model predictions, statistical maps, or quantitative measurements. No data are uploaded and no inference or statistical analysis runs.
+Chamber channels: 122 LA, 123 RA, 125 LV, 126 RV. Point suffixes: 1 top, 2 bottom, 3 image left, 4 image right. The exporter reads the original extrema, connected-component, polygon and OpenCV measurement functions through AST without running or modifying the archived notebooks.
 
-The morphometry sandbox uses analytic closed contours in normalized coordinates. Four diagonal half-plane sectors partition each polygon. These are not the study's landmark definitions. Regional perimeter includes artificial cut edges. The published p-values must not be interpreted as statistics for the generated example shapes.
+Feature definitions:
 
-The 3D surfaces are generated by `geometry.js`; there is no scan-derived heart mesh in this prototype. The model is schematic and does not imply patient-specific 3D reconstruction from a chest X-ray. Mesh measurements are computed by triangle areas and signed tetrahedral volumes of closed surfaces.
+- Anterior: RA1, RA2, LV2, LA1
+- Inferior: RV3, RA2, LV2, LV4
+- Left: LV1, LV2, LV4, RV1
+- Right: RA1, RA3, RA2
+- Upper: RA1, LV1, RV1, LA1
 
-Figure numbering in the explorer follows the source filenames. Existing project captions use a different presentation order in places.
+No physical pixel calibration is available. Area is reported in px² and perimeter in px. Display changes never recalculate or alter the original measurements.
 
-To use real study overlays, replace the illustrative paths with aligned masks/contours at a common image resolution, and provide appropriate provenance and permission to redistribute each asset. Add cohort/sample controls only when matching source data are available.
+## Rounded geometry
 
-## Connected sample walkthrough
+Each chamber is a closed loft between front and back poles, with its saved contour retained at the equator. Inner rings gradually relax toward an ellipse, and smoothed vertex normals with interpolated lighting provide a rounded appearance. Fullness and relative front/back offsets are visualization choices, not patient-specific depth estimates. Chamber surfaces can intersect.
 
-- Copied sample: `h0001.png` and channels 121–123, 125–132 from the matching `(159, 512, 512)` segmentation array in the local figures data. The complete original array remains in place. Selected cleaned masks are available as `sample/sample-masks.npz` and exact raster overlay PNGs.
-- The exporter reads the original functions through AST: `get_top_bottom_left_right_points`, `get_border`, `get_centroid`, `get_points`, `select_large_blob`, `get_surface_cords`, and `get_surface_stats`. It does not run the notebooks or their imports, inference, batch loops, or write operations. The notebook and helper SHA-256 values are checked before and after export.
-- Chamber channels: 122 LA, 123 RA, 125 LV, 126 RV. Point suffixes: 1 top, 2 bottom, 3 image left, 4 image right. NumPy's extrema tie-breaking is retained by running the original function definition.
-- Feature sequences: anterior `[RA1, RA2, LV2, LA1]`; inferior `[RV3, RA2, LV2, LV4]`; left `[LV1, LV2, LV4, RV1]`; right `[RA1, RA3, RA2]`; upper `[RA1, LV1, RV1, LA1]`. The closed polygon area and perimeter use the source OpenCV functions.
-- Optional vessel overlays use the saved channel masks. Overlap/outside-heart counts follow the vessel notebook's heart-mask intersections. Channel 132 is correctly named **inferior vena cava** using the accompanying CXAS label map; the old vessel notebook labels it pulmonary vein.
-- This figure sample uses the saved native 512×512 frame. The original group-analysis workflow additionally uses registered outputs. No rotation or mirroring is guessed from the orientation notebook; the matching image and masks keep their common saved frame.
-- The default depth view is a **single connected illustrative shell**, not a patient reconstruction. A 3 px display grid covers the union of the saved heart and chamber silhouettes. Its rounded depth field is based on distance to the display boundary. Front, back and rim share indexed vertices and edges, forming one closed connected mesh. Chamber colours are painted onto that mesh using the original contour membership; overlapping masks blend their colours. Turning off a chamber patch reveals the common neutral shell.
-- Selected features colour the corresponding mesh triangles. Feature boundaries and landmark markers use the exact same piecewise-linear height field as the shell. This avoids a floating planar polygon between unrelated chamber depths. The five original 2D feature measurements are unchanged.
-- **Exploded chamber contours** remains an explicit optional display mode. Only this mode enables the layer-spacing slider, and its dashed connecting lines represent a landmark graph. The connected default ignores layer spacing and starts at 60 px assumed total depth, with no separation.
-- Source display contours use a 0.45 px simplification tolerance before the connected view's additional 3 px display sampling. All depth, rounding, surface connectivity and chamber layer ordering are visualization choices. No physical pixel calibration or patient-specific depth is available; no clinical 3D volumes are reported.
-- No publication, remote inference, image upload or source-repository edits occur. `sample-data.json` records asset and method hashes without copying clinical tables.
+Landmarks are mapped onto their own chamber's front triangles using barycentric interpolation. Outlined markers indicate occlusion. Feature surface patches use the original 2D footprint. Visible boundary segments follow the model surface and stop at occlusion or chamber changes; optional dashed edges are a landmark graph.
 
-To reproduce the export, run `export_sample.py --archive <archived Cardiomorph directory> --pyfeature <pyFeature directory> --sample <source prefix without extension> --output <this directory>/sample` with NumPy, OpenCV, scikit-image and Pillow. All output is written to the selected destination.
-
-## Rounded-chamber comparison tab
-
-- Each chamber has a separate closed mesh. A series of contracting contour rings joins front and back poles. The equatorial ring retains the saved display contour; inner rings progressively relax toward an ellipse to reduce mask-boundary creases. Three passes of vertex-normal smoothing and interpolated triangle lighting provide a rounded appearance.
-- Chamber fullness is illustrative and scaled from the 2D mask area. Small assigned front/back offsets place the lobes together in the common image frame. Neither depth nor relative chamber arrangement is inferred from the X-ray. Chamber shapes can intersect; this is not an anatomical reconstruction.
-- All 16 source landmarks are projected onto the front triangles of their own chamber by barycentric interpolation. The spatial lookup uses the mesh itself. Outlined markers indicate occlusion by another rendered surface. Original source coordinates and 2D feature measurements remain unchanged.
-- **Surface patches** project each feature's original 2D footprint onto the rounded meshes. **Landmark graph** adds explicit dashed edges between the corresponding 3D points. These are distinct overlays; the dashed graph does not define an anatomical surface. In solo mode graph edges to hidden chambers are omitted.
-- The tab offers fullness, rotation, zoom, source-plane visibility, mesh edges, and solo-chamber inspection. The shared X-ray, segmentation controls, landmarks and feature inspector continue to work. Each tab retains its own camera/depth settings while source controls stay linked.
-- The connected-surface tab and archived source code remain available unchanged by the rounded geometry method.
+`export_sample.py` can reproduce the sample assets with NumPy, OpenCV, scikit-image and Pillow. It confines writes to the selected output folder and verifies that the archived notebook and helper hashes remain unchanged. The original 159-channel array and archived repository are left in place.
